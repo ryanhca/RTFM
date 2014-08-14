@@ -1,0 +1,894 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.22/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 warn package.json rtfm@0.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/christopheresplin/Development/rtfm',
+6 verbose install   [ 'grunt',
+6 verbose install     'grunt-autoprefixer',
+6 verbose install     'grunt-bower-install',
+6 verbose install     'grunt-concurrent',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-contrib-coffee',
+6 verbose install     'grunt-contrib-compass',
+6 verbose install     'grunt-contrib-concat',
+6 verbose install     'grunt-contrib-connect',
+6 verbose install     'grunt-contrib-copy',
+6 verbose install     'grunt-contrib-cssmin',
+6 verbose install     'grunt-contrib-htmlmin',
+6 verbose install     'grunt-contrib-imagemin',
+6 verbose install     'grunt-contrib-jshint',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-watch',
+6 verbose install     'grunt-google-cdn',
+6 verbose install     'grunt-newer',
+6 verbose install     'grunt-ngmin',
+6 verbose install     'grunt-rev',
+6 verbose install     'grunt-svgmin',
+6 verbose install     'grunt-usemin',
+6 verbose install     'jshint-stylish',
+6 verbose install     'load-grunt-tasks',
+6 verbose install     'time-grunt',
+6 verbose install     'karma-ng-scenario',
+6 verbose install     'grunt-karma',
+6 verbose install     'karma',
+6 verbose install     'karma-ng-html2js-preprocessor' ] ]
+7 info preinstall rtfm@0.0.0
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping grunt-concurrent@~0.4.1 /Users/christopheresplin/Development/rtfm
+10 verbose already installed skipping grunt-autoprefixer@~0.4.0 /Users/christopheresplin/Development/rtfm
+11 verbose already installed skipping grunt-contrib-clean@~0.5.0 /Users/christopheresplin/Development/rtfm
+12 verbose already installed skipping grunt-bower-install@~0.7.0 /Users/christopheresplin/Development/rtfm
+13 verbose already installed skipping grunt-contrib-coffee@~0.7.0 /Users/christopheresplin/Development/rtfm
+14 verbose already installed skipping grunt-contrib-compass@~0.6.0 /Users/christopheresplin/Development/rtfm
+15 verbose already installed skipping grunt-contrib-concat@~0.3.0 /Users/christopheresplin/Development/rtfm
+16 verbose already installed skipping grunt-contrib-connect@~0.5.0 /Users/christopheresplin/Development/rtfm
+17 verbose already installed skipping grunt-contrib-copy@~0.4.1 /Users/christopheresplin/Development/rtfm
+18 verbose already installed skipping grunt-contrib-cssmin@~0.7.0 /Users/christopheresplin/Development/rtfm
+19 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 /Users/christopheresplin/Development/rtfm
+20 verbose already installed skipping grunt-contrib-imagemin@~0.3.0 /Users/christopheresplin/Development/rtfm
+21 verbose already installed skipping grunt-contrib-jshint@~0.7.1 /Users/christopheresplin/Development/rtfm
+22 verbose cache add [ 'grunt-contrib-uglify@~0.2.0', null ]
+23 verbose cache add name=undefined spec="grunt-contrib-uglify@~0.2.0" args=["grunt-contrib-uglify@~0.2.0",null]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: 'grunt-contrib-uglify@~0.2.0',
+24 verbose parsed url   path: 'grunt-contrib-uglify@~0.2.0',
+24 verbose parsed url   href: 'grunt-contrib-uglify@~0.2.0' }
+25 verbose cache add name="grunt-contrib-uglify" spec="~0.2.0" args=["grunt-contrib-uglify","~0.2.0"]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: '~0.2.0',
+26 verbose parsed url   path: '~0.2.0',
+26 verbose parsed url   href: '~0.2.0' }
+27 verbose addNamed [ 'grunt-contrib-uglify', '~0.2.0' ]
+28 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+29 verbose already installed skipping grunt-contrib-watch@~0.5.2 /Users/christopheresplin/Development/rtfm
+30 verbose already installed skipping grunt-google-cdn@~0.2.0 /Users/christopheresplin/Development/rtfm
+31 silly lockFile 2cc6dac2-grunt-contrib-uglify-0-2-0 grunt-contrib-uglify@~0.2.0
+32 verbose lock grunt-contrib-uglify@~0.2.0 /Users/christopheresplin/.npm/2cc6dac2-grunt-contrib-uglify-0-2-0.lock
+33 verbose already installed skipping grunt-newer@~0.5.4 /Users/christopheresplin/Development/rtfm
+34 silly addNameRange { name: 'grunt-contrib-uglify',
+34 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+34 silly addNameRange   hasData: false }
+35 verbose already installed skipping grunt-ngmin@~0.0.2 /Users/christopheresplin/Development/rtfm
+36 verbose url raw grunt-contrib-uglify
+37 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-uglify' ]
+38 verbose url resolved https://registry.npmjs.org/grunt-contrib-uglify
+39 info trying registry request attempt 1 at 12:22:58
+40 verbose etag "CDNBRS79E1PZSMXSK7IUYCR5H"
+41 http GET https://registry.npmjs.org/grunt-contrib-uglify
+42 verbose already installed skipping grunt-usemin@~2.0.0 /Users/christopheresplin/Development/rtfm
+43 verbose already installed skipping grunt-rev@~0.1.0 /Users/christopheresplin/Development/rtfm
+44 verbose already installed skipping jshint-stylish@~0.1.3 /Users/christopheresplin/Development/rtfm
+45 verbose already installed skipping grunt-svgmin@~0.2.0 /Users/christopheresplin/Development/rtfm
+46 verbose already installed skipping load-grunt-tasks@~0.2.0 /Users/christopheresplin/Development/rtfm
+47 verbose already installed skipping time-grunt@~0.2.1 /Users/christopheresplin/Development/rtfm
+48 verbose already installed skipping karma-ng-scenario@~0.1.0 /Users/christopheresplin/Development/rtfm
+49 verbose already installed skipping grunt-karma@~0.8.3 /Users/christopheresplin/Development/rtfm
+50 verbose already installed skipping karma@~0.12.16 /Users/christopheresplin/Development/rtfm
+51 verbose already installed skipping karma-ng-html2js-preprocessor@~0.1.0 /Users/christopheresplin/Development/rtfm
+52 verbose already installed skipping grunt@~0.4.1 /Users/christopheresplin/Development/rtfm
+53 http 401 https://registry.npmjs.org/grunt-contrib-uglify
+54 info trying registry request attempt 1 at 12:22:58
+55 verbose etag "CDNBRS79E1PZSMXSK7IUYCR5H"
+56 http GET https://registry.npmjs.org/grunt-contrib-uglify
+57 http 401 https://registry.npmjs.org/grunt-contrib-uglify
+58 silly registry.get cb [ 304, undefined ]
+59 verbose etag grunt-contrib-uglify from cache
+60 silly addNameRange number 2 { name: 'grunt-contrib-uglify',
+60 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+60 silly addNameRange   hasData: true }
+61 silly addNameRange versions [ 'grunt-contrib-uglify',
+61 silly addNameRange   [ '0.1.0',
+61 silly addNameRange     '0.1.1',
+61 silly addNameRange     '0.1.2',
+61 silly addNameRange     '0.2.0',
+61 silly addNameRange     '0.2.1',
+61 silly addNameRange     '0.2.2',
+61 silly addNameRange     '0.2.3',
+61 silly addNameRange     '0.2.4',
+61 silly addNameRange     '0.2.5',
+61 silly addNameRange     '0.2.6',
+61 silly addNameRange     '0.2.7',
+61 silly addNameRange     '0.3.0',
+61 silly addNameRange     '0.3.1',
+61 silly addNameRange     '0.1.1-rc5',
+61 silly addNameRange     '0.1.1-rc6',
+61 silly addNameRange     '0.3.2',
+61 silly addNameRange     '0.3.3',
+61 silly addNameRange     '0.4.0',
+61 silly addNameRange     '0.5.0' ] ]
+62 verbose addNamed [ 'grunt-contrib-uglify', '0.2.7' ]
+63 verbose addNamed [ '0.2.7', '0.2.7' ]
+64 silly lockFile 480328f6-grunt-contrib-uglify-0-2-7 grunt-contrib-uglify@0.2.7
+65 verbose lock grunt-contrib-uglify@0.2.7 /Users/christopheresplin/.npm/480328f6-grunt-contrib-uglify-0-2-7.lock
+66 silly lockFile 480328f6-grunt-contrib-uglify-0-2-7 grunt-contrib-uglify@0.2.7
+67 silly lockFile 480328f6-grunt-contrib-uglify-0-2-7 grunt-contrib-uglify@0.2.7
+68 silly lockFile 2cc6dac2-grunt-contrib-uglify-0-2-0 grunt-contrib-uglify@~0.2.0
+69 silly lockFile 2cc6dac2-grunt-contrib-uglify-0-2-0 grunt-contrib-uglify@~0.2.0
+70 silly resolved [ { name: 'grunt-contrib-uglify',
+70 silly resolved     description: 'Minify files with UglifyJS.',
+70 silly resolved     version: '0.2.7',
+70 silly resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-uglify',
+70 silly resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+70 silly resolved     repository:
+70 silly resolved      { type: 'git',
+70 silly resolved        url: 'git://github.com/gruntjs/grunt-contrib-uglify.git' },
+70 silly resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-uglify/issues' },
+70 silly resolved     licenses: [ [Object] ],
+70 silly resolved     engines: { node: '>= 0.8.0' },
+70 silly resolved     scripts: { test: 'grunt test' },
+70 silly resolved     dependencies: { 'uglify-js': '~2.4.0', 'grunt-lib-contrib': '~0.6.1' },
+70 silly resolved     devDependencies:
+70 silly resolved      { 'grunt-contrib-jshint': '~0.6.3',
+70 silly resolved        'grunt-contrib-nodeunit': '~0.2.0',
+70 silly resolved        'grunt-contrib-clean': '~0.5.0',
+70 silly resolved        'grunt-contrib-internal': '~0.4.2',
+70 silly resolved        grunt: '~0.4.0' },
+70 silly resolved     peerDependencies: { grunt: '~0.4.0' },
+70 silly resolved     keywords: [ 'gruntplugin' ],
+70 silly resolved     contributors: [ [Object], [Object], [Object] ],
+70 silly resolved     readme: '# grunt-contrib-uglify v0.2.6 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-uglify.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-uglify)\n\n> Minify files with UglifyJS.\n\n\n\n## Getting Started\nThis plugin requires Grunt `~0.4.0`\n\nIf you haven\'t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you\'re familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-contrib-uglify --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-contrib-uglify\');\n```\n\n\n\n\n## Uglify task\n_Run this task with the `grunt uglify` command._\n\nTask targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.\n### Options\n\nThis task primarily delegates to [UglifyJS2][], so please consider the [UglifyJS documentation][] as required reading for advanced configuration.\n\n[UglifyJS2]: https://github.com/mishoo/UglifyJS2\n[UglifyJS documentation]: http://lisperator.net/uglifyjs/\n\n#### mangle\nType: `Boolean` `Object`\nDefault: `{}`\n\nTurn on or off mangling with default options. If an `Object` is specified, it is passed directly to `ast.mangle_names()` *and* `ast.compute_char_frequency()` (mimicking command line behavior).\n\n#### compress\nType: `Boolean` `Object`\nDefault: `{}`\n\nTurn on or off source compression with default options. If an `Object` is specified, it is passed as options to `UglifyJS.Compressor()`.\n\n#### beautify\nType: `Boolean` `Object`\nDefault: `false`\n\nTurns on beautification of the generated source code. An `Object` will be merged and passed with the options sent to `UglifyJS.OutputStream()`\n\n#### report\nChoices: `false` `\'min\'` `\'gzip\'`\nDefault: `false`\n\nEither do not report anything, report only minification result, or report minification and gzip results. This is useful to see exactly how well Uglify is performing, but using `\'gzip\'` can add 5-10x runtime task execution.\n\nExample ouput using `\'gzip\'`:\n\n```\nOriginal: 198444 bytes.\nMinified: 101615 bytes.\nGzipped:  20084 bytes.\n```\n\n#### sourceMap\nType: `String`  `Function`\nDefault: `undefined`\n\nThe location to output the sourcemap. If a function is provided, the uglify destination is passed as the argument\nand the return value will be used as the sourceMap name.\n\n#### sourceMapRoot\nType: `String`\nDefault: `undefined`\n\nThe location where your source files can be found. This sets the sourceRoot field in the source map.\n\n#### sourceMapIn\nType: `String`  `Function`\nDefault: `undefined`\n\nThe location of an input source map from an earlier compilation, e.g. from CoffeeScript. If a function is provided, the\nuglify source is passed as the argument and the return value will be used as the sourceMap name. This only makes sense\nwhen there\'s one source file.\n\n#### sourceMappingURL\nType: `String`  `Function`\nDefault: `undefined`\n\nThe location of your sourcemap. Defaults to the location you use for sourceMap, override if you need finer control. Provide\na function to dynamically generate the sourceMappingURL based off the destination.\n\n#### sourceMapPrefix\nType: `Number`\nDefault: `undefined`\n\nThe number of directories to drop from the path prefix when declaring files in the source map.\n\n###### enclose\nType: `Object`\nDefault: `undefined`\n\nWrap all of the code in a closure with a configurable arguments/parameters list.\nEach key-value pair in the `enclose` object is effectively an argument-parameter pair.\n\n#### wrap\nType: `String`\nDefault: `undefined`\n\nWrap all of the code in a closure, an easy way to make sure nothing is leaking.\nFor variables that need to be public `exports` and `global` variables are made available.\nThe value of wrap is the global variable exports will be available as.\n\n#### exportAll\nType: `Boolean`\nDefault: `false`\n\nWhen using `wrap` this will make all global functions and variables available via the export variable.\n\n#### preserveComments\nType: `Boolean` `String` `Function`\nDefault: `undefined`\nOptions: `false` `\'all\'` `\'some\'`\n\nTurn on preservation of comments.\n\n- `false` will strip all comments\n- `\'all\'` will preserve all comments in code blocks that have not been squashed or dropped\n- `\'some\'` will preserve all comments that start with a bang (`!`) or include a closure compiler style directive (`@preserve` `@license` `@cc_on`)\n- `Function` specify your own comment preservation function. You will be passed the current node and the current comment and are expected to return either `true` or `false`\n\n#### banner\nType: `String`\nDefault: empty string\n\nThis string will be prepended to the beginning of the minified output. It is processed using [grunt.template.process][], using the default options.\n\n#### footer\nType: `String`\nDefault: empty string\n\nThis string will be append to the end of the minified output. It is processed using [grunt.template.process][], using the default options.\n\n_(Default processing options are explained in the [grunt.template.process][] documentation)_\n\n[grunt.template.process]: https://github.com/gruntjs/grunt/wiki/grunt.template#wiki-grunt-template-process\n\n\n### Usage examples\n\n#### Basic compression\n\nThis configuration will compress and mangle the input files using the default options.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input1.js\', \'src/input2.js\']\n      }\n    }\n  }\n});\n```\n\n#### No mangling\n\nSpecify `mangle: false` to prevent changes to your variable and function names.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    options: {\n      mangle: false\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Reserved identifiers\n\nYou can specify identifiers to leave untouched with an `except` array in the `mangle` options.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    options: {\n      mangle: {\n        except: [\'jQuery\', \'Backbone\']\n      }\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Source maps\n\nConfigure basic source map output by specifying a file path for the `sourceMap` option.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      options: {\n        sourceMap: \'path/to/source-map.js\'\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Advanced source maps\n\nYou can specify the parameters to pass to `UglifyJS.SourceMap()` which will\nallow you to configure advanced settings.\n\nRefer to the [UglifyJS SourceMap Documentation](http://lisperator.net/uglifyjs/codegen#source-map) for more information.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      options: {\n        sourceMap: \'path/to/source-map.js\',\n        sourceMapRoot: \'http://example.com/path/to/src/\', // the location to find your original source\n        sourceMapIn: \'example/coffeescript-sourcemap.js\', // input sourcemap from a previous compilation\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\'],\n      },\n    },\n  },\n});\n```\n\n\n#### Beautify\n\nSpecify `beautify: true` to beautify your code for debugging/troubleshooting purposes.\nPass an object to manually configure any other output options passed directly to `UglifyJS.OutputStream()`.\n\nSee [UglifyJS Codegen documentation](http://lisperator.net/uglifyjs/codegen) for more information.\n\n_Note that manual configuration will require you to explicitly set `beautify: true` if you want traditional, beautified output._\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      options: {\n        beautify: true\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    },\n    my_advanced_target: {\n      options: {\n        beautify: {\n          width: 80,\n          beautify: true\n        }\n      },\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Banner comments\n\nIn this example, running `grunt uglify:my_target` will prepend a banner created by interpolating the `banner` template string with the config object. Here, those properties are the values imported from the `package.json` file (which are available via the `pkg` config property) plus today\'s date.\n\n_Note: you don\'t have to use an external JSON file. It\'s also valid to create the `pkg` object inline in the config. That being said, if you already have a JSON file, you might as well reference it._\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  pkg: grunt.file.readJSON(\'package.json\'),\n  uglify: {\n    options: {\n      banner: \'/*! <%= pkg.name %> - v<%= pkg.version %> - \' +\n        \'<%= grunt.template.today("yyyy-mm-dd") %> */\'\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n\n#### Conditional compilation\n\nYou can also enable UglifyJS conditional compilation. This is commonly used to remove debug code blocks for production builds.\n\nSee [UglifyJS global definitions documentation](http://lisperator.net/uglifyjs/compress#global-defs) for more information.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    options: {\n      compress: {\n        global_defs: {\n          "DEBUG": false\n        },\n        dead_code: true\n      }\n    },\n    my_target: {\n      files: {\n        \'dest/output.min.js\': [\'src/input.js\']\n      }\n    }\n  }\n});\n```\n#### Compiling all files in a folder dynamically\n\nThis configuration will compress and mangle the files dynamically.\n\n```js\n// Project configuration.\ngrunt.initConfig({\n  uglify: {\n    my_target: {\n      files: [{\n          expand: true,\n          cwd: \'src/js\',\n          src: \'**/*.js\',\n          dest: \'dest/js\'\n      }]\n    }\n  }\n});\n```\n\n\n## Release History\n\n * 2013-11-09   v0.2.7   prepending banner if sourceMap option not set, addresses\n * 2013-11-08   v0.2.6   merged 45, 53, 85 (105 by way of duping 53) Added support for banners in uglified files with sourcemaps Updated docs\n * 2013-10-28   v0.2.5   Added warning for banners when using sourcemaps\n * 2013-09-02   v0.2.4   updated sourcemap format via /83\n * 2013-06-10   v0.2.3   added footer option\n * 2013-05-31   v0.2.2   Reverted /56 due to /58 until [chrome/239660](https://code.google.com/p/chromium/issues/detail?id=239660&q=sourcemappingurl&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified) [firefox/870361](https://bugzilla.mozilla.org/show_bug.cgi?id=870361) drop\n * 2013-05-22   v0.2.1   Bumped uglify to ~2.3.5 /55 /40 Changed sourcemappingUrl syntax /56 Disabled sorting of names for consistent mangling /44 Updated docs for sourceMapRoot /47 /25\n * 2013-03-14   v0.2.0   No longer report gzip results by default. Support `report` option.\n * 2013-01-30   v0.1.2   Added better error reporting Support for dynamic names of multiple sourcemaps\n * 2013-02-15   v0.1.1   First official release for Grunt 0.4.0.\n * 2013-01-18   v0.1.1rc6   Updating grunt/gruntplugin dependencies to rc6. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.\n * 2013-01-09   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching back to this.files api.\n * 2012-11-28   v0.1.0   Work in progress, not yet officially released.\n\n---\n\nTask submitted by ["Cowboy" Ben Alman](http://benalman.com)\n\n*This file was generated on Sat Nov 09 2013 12:42:05.*\n',
+70 silly resolved     readmeFilename: 'README.md',
+70 silly resolved     _id: 'grunt-contrib-uglify@0.2.7',
+70 silly resolved     _from: 'grunt-contrib-uglify@~0.2.0' } ]
+71 info install grunt-contrib-uglify@0.2.7 into /Users/christopheresplin/Development/rtfm
+72 info installOne grunt-contrib-uglify@0.2.7
+73 info /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify unbuild
+74 verbose tar unpack /Users/christopheresplin/.npm/grunt-contrib-uglify/0.2.7/package.tgz
+75 silly lockFile 8f3c07f0-ode-modules-grunt-contrib-uglify tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify
+76 verbose lock tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify /Users/christopheresplin/.npm/8f3c07f0-ode-modules-grunt-contrib-uglify.lock
+77 silly lockFile f924acea-contrib-uglify-0-2-7-package-tgz tar:///Users/christopheresplin/.npm/grunt-contrib-uglify/0.2.7/package.tgz
+78 verbose lock tar:///Users/christopheresplin/.npm/grunt-contrib-uglify/0.2.7/package.tgz /Users/christopheresplin/.npm/f924acea-contrib-uglify-0-2-7-package-tgz.lock
+79 silly gunzTarPerm modes [ '755', '644' ]
+80 silly gunzTarPerm extractEntry package.json
+81 silly gunzTarPerm extractEntry .npmignore
+82 silly gunzTarPerm extractEntry README.md
+83 silly gunzTarPerm extractEntry Gruntfile.js
+84 silly gunzTarPerm extractEntry CHANGELOG
+85 silly gunzTarPerm extractEntry CONTRIBUTING.md
+86 silly gunzTarPerm extractEntry .jshintrc
+87 silly gunzTarPerm extractEntry LICENSE-MIT
+88 silly gunzTarPerm extractEntry .travis.yml
+89 silly gunzTarPerm extractEntry docs/uglify-examples.md
+90 silly gunzTarPerm extractEntry docs/uglify-options.md
+91 silly gunzTarPerm extractEntry docs/uglify-overview.md
+92 silly gunzTarPerm extractEntry AUTHORS
+93 silly gunzTarPerm extractEntry tasks/uglify.js
+94 silly gunzTarPerm extractEntry tasks/lib/uglify.js
+95 silly gunzTarPerm extractEntry test/uglify_test.js
+96 silly gunzTarPerm extractEntry test/fixtures/expected/comments.js
+97 silly gunzTarPerm extractEntry test/fixtures/expected/compress_mangle_banner.js
+98 silly gunzTarPerm extractEntry test/fixtures/expected/compress_mangle_beautify.js
+99 silly gunzTarPerm extractEntry test/fixtures/expected/compress_mangle_except.js
+100 silly gunzTarPerm extractEntry test/fixtures/expected/sourcemapurl.js
+101 silly gunzTarPerm extractEntry test/fixtures/expected/compress_mangle.js
+102 silly gunzTarPerm extractEntry test/fixtures/expected/exportAll.js
+103 silly gunzTarPerm extractEntry test/fixtures/expected/compress.js
+104 silly gunzTarPerm extractEntry test/fixtures/expected/multiple_sourcemaps1.js
+105 silly gunzTarPerm extractEntry test/fixtures/expected/sourcemapin.js
+106 silly gunzTarPerm extractEntry test/fixtures/expected/multiple_sourcemaps2.js
+107 silly gunzTarPerm extractEntry test/fixtures/expected/enclose.js
+108 silly gunzTarPerm extractEntry test/fixtures/expected/wrap.js
+109 silly gunzTarPerm extractEntry test/fixtures/expected/multifile.js
+110 silly gunzTarPerm extractEntry test/fixtures/expected/multiple_sourcemaps2.map
+111 silly gunzTarPerm extractEntry test/fixtures/expected/sourcemap_prefix
+112 silly gunzTarPerm extractEntry test/fixtures/expected/sourcemapin
+113 silly gunzTarPerm extractEntry test/fixtures/expected/multiple_sourcemaps1.map
+114 silly gunzTarPerm extractEntry test/fixtures/expected/compress_mangle_sourcemap
+115 silly gunzTarPerm extractEntry test/fixtures/src/comments.js
+116 silly gunzTarPerm extractEntry test/fixtures/src/simple.js
+117 silly gunzTarPerm extractEntry test/fixtures/src/simple2.js
+118 silly gunzTarPerm extractEntry test/fixtures/src/simple2.coffee
+119 silly gunzTarPerm extractEntry test/fixtures/src/simple2.map
+120 silly lockFile 8f3c07f0-ode-modules-grunt-contrib-uglify tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify
+121 silly lockFile 8f3c07f0-ode-modules-grunt-contrib-uglify tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify
+122 silly lockFile f924acea-contrib-uglify-0-2-7-package-tgz tar:///Users/christopheresplin/.npm/grunt-contrib-uglify/0.2.7/package.tgz
+123 silly lockFile f924acea-contrib-uglify-0-2-7-package-tgz tar:///Users/christopheresplin/.npm/grunt-contrib-uglify/0.2.7/package.tgz
+124 info preinstall grunt-contrib-uglify@0.2.7
+125 verbose readDependencies using package.json deps
+126 verbose readDependencies using package.json deps
+127 verbose cache add [ 'uglify-js@~2.4.0', null ]
+128 verbose cache add name=undefined spec="uglify-js@~2.4.0" args=["uglify-js@~2.4.0",null]
+129 verbose parsed url { protocol: null,
+129 verbose parsed url   slashes: null,
+129 verbose parsed url   auth: null,
+129 verbose parsed url   host: null,
+129 verbose parsed url   port: null,
+129 verbose parsed url   hostname: null,
+129 verbose parsed url   hash: null,
+129 verbose parsed url   search: null,
+129 verbose parsed url   query: null,
+129 verbose parsed url   pathname: 'uglify-js@~2.4.0',
+129 verbose parsed url   path: 'uglify-js@~2.4.0',
+129 verbose parsed url   href: 'uglify-js@~2.4.0' }
+130 verbose cache add name="uglify-js" spec="~2.4.0" args=["uglify-js","~2.4.0"]
+131 verbose parsed url { protocol: null,
+131 verbose parsed url   slashes: null,
+131 verbose parsed url   auth: null,
+131 verbose parsed url   host: null,
+131 verbose parsed url   port: null,
+131 verbose parsed url   hostname: null,
+131 verbose parsed url   hash: null,
+131 verbose parsed url   search: null,
+131 verbose parsed url   query: null,
+131 verbose parsed url   pathname: '~2.4.0',
+131 verbose parsed url   path: '~2.4.0',
+131 verbose parsed url   href: '~2.4.0' }
+132 verbose addNamed [ 'uglify-js', '~2.4.0' ]
+133 verbose addNamed [ null, '>=2.4.0-0 <2.5.0-0' ]
+134 silly lockFile 1d881e0f-uglify-js-2-4-0 uglify-js@~2.4.0
+135 verbose lock uglify-js@~2.4.0 /Users/christopheresplin/.npm/1d881e0f-uglify-js-2-4-0.lock
+136 verbose cache add [ 'grunt-lib-contrib@~0.6.1', null ]
+137 verbose cache add name=undefined spec="grunt-lib-contrib@~0.6.1" args=["grunt-lib-contrib@~0.6.1",null]
+138 verbose parsed url { protocol: null,
+138 verbose parsed url   slashes: null,
+138 verbose parsed url   auth: null,
+138 verbose parsed url   host: null,
+138 verbose parsed url   port: null,
+138 verbose parsed url   hostname: null,
+138 verbose parsed url   hash: null,
+138 verbose parsed url   search: null,
+138 verbose parsed url   query: null,
+138 verbose parsed url   pathname: 'grunt-lib-contrib@~0.6.1',
+138 verbose parsed url   path: 'grunt-lib-contrib@~0.6.1',
+138 verbose parsed url   href: 'grunt-lib-contrib@~0.6.1' }
+139 verbose cache add name="grunt-lib-contrib" spec="~0.6.1" args=["grunt-lib-contrib","~0.6.1"]
+140 verbose parsed url { protocol: null,
+140 verbose parsed url   slashes: null,
+140 verbose parsed url   auth: null,
+140 verbose parsed url   host: null,
+140 verbose parsed url   port: null,
+140 verbose parsed url   hostname: null,
+140 verbose parsed url   hash: null,
+140 verbose parsed url   search: null,
+140 verbose parsed url   query: null,
+140 verbose parsed url   pathname: '~0.6.1',
+140 verbose parsed url   path: '~0.6.1',
+140 verbose parsed url   href: '~0.6.1' }
+141 verbose addNamed [ 'grunt-lib-contrib', '~0.6.1' ]
+142 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+143 silly lockFile a97902f4-grunt-lib-contrib-0-6-1 grunt-lib-contrib@~0.6.1
+144 verbose lock grunt-lib-contrib@~0.6.1 /Users/christopheresplin/.npm/a97902f4-grunt-lib-contrib-0-6-1.lock
+145 silly addNameRange { name: 'uglify-js',
+145 silly addNameRange   range: '>=2.4.0-0 <2.5.0-0',
+145 silly addNameRange   hasData: false }
+146 silly addNameRange { name: 'grunt-lib-contrib',
+146 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+146 silly addNameRange   hasData: false }
+147 verbose url raw uglify-js
+148 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+149 verbose url resolved https://registry.npmjs.org/uglify-js
+150 info trying registry request attempt 1 at 12:22:59
+151 verbose etag "74ENYVHEZ34XLUDDTRGJOLU8E"
+152 http GET https://registry.npmjs.org/uglify-js
+153 verbose url raw grunt-lib-contrib
+154 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-lib-contrib' ]
+155 verbose url resolved https://registry.npmjs.org/grunt-lib-contrib
+156 info trying registry request attempt 1 at 12:22:59
+157 verbose etag "4M1P4E4DK546EWG6MQ6FHADTG"
+158 http GET https://registry.npmjs.org/grunt-lib-contrib
+159 http 401 https://registry.npmjs.org/grunt-lib-contrib
+160 silly registry.get cb [ 304, undefined ]
+161 verbose etag grunt-lib-contrib from cache
+162 http 401 https://registry.npmjs.org/uglify-js
+163 silly registry.get cb [ 304, undefined ]
+164 verbose etag uglify-js from cache
+165 silly addNameRange number 2 { name: 'grunt-lib-contrib',
+165 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+165 silly addNameRange   hasData: true }
+166 silly addNameRange versions [ 'grunt-lib-contrib',
+166 silly addNameRange   [ '0.3.0',
+166 silly addNameRange     '0.3.1',
+166 silly addNameRange     '0.4.0',
+166 silly addNameRange     '0.5.1',
+166 silly addNameRange     '0.5.2',
+166 silly addNameRange     '0.5.3',
+166 silly addNameRange     '0.6.0',
+166 silly addNameRange     '0.6.1',
+166 silly addNameRange     '0.7.0',
+166 silly addNameRange     '0.7.1' ] ]
+167 verbose addNamed [ 'grunt-lib-contrib', '0.6.1' ]
+168 verbose addNamed [ '0.6.1', '0.6.1' ]
+169 silly lockFile 0ef65a81-grunt-lib-contrib-0-6-1 grunt-lib-contrib@0.6.1
+170 verbose lock grunt-lib-contrib@0.6.1 /Users/christopheresplin/.npm/0ef65a81-grunt-lib-contrib-0-6-1.lock
+171 silly addNameRange number 2 { name: 'uglify-js', range: '>=2.4.0-0 <2.5.0-0', hasData: true }
+172 silly addNameRange versions [ 'uglify-js',
+172 silly addNameRange   [ '0.0.1',
+172 silly addNameRange     '0.0.2',
+172 silly addNameRange     '0.0.3',
+172 silly addNameRange     '0.0.4',
+172 silly addNameRange     '0.0.5',
+172 silly addNameRange     '1.0.1',
+172 silly addNameRange     '1.0.2',
+172 silly addNameRange     '1.0.3',
+172 silly addNameRange     '1.0.4',
+172 silly addNameRange     '1.0.5',
+172 silly addNameRange     '1.0.6',
+172 silly addNameRange     '1.0.7',
+172 silly addNameRange     '1.1.0',
+172 silly addNameRange     '1.1.1',
+172 silly addNameRange     '1.2.0',
+172 silly addNameRange     '1.2.1',
+172 silly addNameRange     '1.2.2',
+172 silly addNameRange     '1.2.3',
+172 silly addNameRange     '1.2.4',
+172 silly addNameRange     '1.2.5',
+172 silly addNameRange     '1.2.6',
+172 silly addNameRange     '1.3.0',
+172 silly addNameRange     '1.3.1',
+172 silly addNameRange     '1.3.2',
+172 silly addNameRange     '1.3.3',
+172 silly addNameRange     '1.3.4',
+172 silly addNameRange     '2.2.0',
+172 silly addNameRange     '2.2.1',
+172 silly addNameRange     '2.2.2',
+172 silly addNameRange     '2.2.3',
+172 silly addNameRange     '2.2.4',
+172 silly addNameRange     '2.2.5',
+172 silly addNameRange     '2.3.0',
+172 silly addNameRange     '2.3.1',
+172 silly addNameRange     '2.3.2',
+172 silly addNameRange     '2.3.3',
+172 silly addNameRange     '2.3.4',
+172 silly addNameRange     '2.3.5',
+172 silly addNameRange     '2.3.6',
+172 silly addNameRange     '1.3.5',
+172 silly addNameRange     '2.4.0',
+172 silly addNameRange     '2.4.1',
+172 silly addNameRange     '2.4.2',
+172 silly addNameRange     '2.4.3',
+172 silly addNameRange     '2.4.4',
+172 silly addNameRange     '2.4.5',
+172 silly addNameRange     '2.4.6',
+172 silly addNameRange     '2.4.7',
+172 silly addNameRange     '2.4.8',
+172 silly addNameRange     '2.4.9',
+172 silly addNameRange     '2.4.10',
+172 silly addNameRange     '2.4.11',
+172 silly addNameRange     '2.4.12',
+172 silly addNameRange     '2.4.13',
+172 silly addNameRange     '2.4.14',
+172 silly addNameRange     '2.4.15' ] ]
+173 verbose addNamed [ 'uglify-js', '2.4.15' ]
+174 verbose addNamed [ '2.4.15', '2.4.15' ]
+175 silly lockFile c0fc2e9c-uglify-js-2-4-15 uglify-js@2.4.15
+176 verbose lock uglify-js@2.4.15 /Users/christopheresplin/.npm/c0fc2e9c-uglify-js-2-4-15.lock
+177 silly lockFile 0ef65a81-grunt-lib-contrib-0-6-1 grunt-lib-contrib@0.6.1
+178 silly lockFile 0ef65a81-grunt-lib-contrib-0-6-1 grunt-lib-contrib@0.6.1
+179 silly lockFile c0fc2e9c-uglify-js-2-4-15 uglify-js@2.4.15
+180 silly lockFile c0fc2e9c-uglify-js-2-4-15 uglify-js@2.4.15
+181 silly lockFile a97902f4-grunt-lib-contrib-0-6-1 grunt-lib-contrib@~0.6.1
+182 silly lockFile a97902f4-grunt-lib-contrib-0-6-1 grunt-lib-contrib@~0.6.1
+183 silly lockFile 1d881e0f-uglify-js-2-4-0 uglify-js@~2.4.0
+184 silly lockFile 1d881e0f-uglify-js-2-4-0 uglify-js@~2.4.0
+185 silly resolved [ { name: 'grunt-lib-contrib',
+185 silly resolved     description: 'Common functionality shared across grunt-contrib tasks.',
+185 silly resolved     version: '0.6.1',
+185 silly resolved     homepage: 'http://github.com/gruntjs/grunt-lib-contrib',
+185 silly resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+185 silly resolved     repository:
+185 silly resolved      { type: 'git',
+185 silly resolved        url: 'git://github.com/gruntjs/grunt-lib-contrib.git' },
+185 silly resolved     bugs: { url: 'https://github.com/gruntjs/grunt-lib-contrib/issues' },
+185 silly resolved     licenses: [ [Object] ],
+185 silly resolved     engines: { node: '>= 0.8.0' },
+185 silly resolved     scripts: { test: 'grunt test' },
+185 silly resolved     devDependencies:
+185 silly resolved      { 'grunt-contrib-jshint': '~0.1.1',
+185 silly resolved        'grunt-contrib-nodeunit': '~0.1.2',
+185 silly resolved        grunt: '~0.4.0' },
+185 silly resolved     main: 'lib/contrib',
+185 silly resolved     dependencies: { 'zlib-browserify': '0.0.1' },
+185 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+185 silly resolved     readme: '# grunt-lib-contrib [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-lib-contrib.png?branch=master)](http://travis-ci.org/gruntjs/grunt-lib-contrib)\n\n> Common functionality shared across grunt-contrib tasks.\n\nThe purpose of grunt-lib-contrib is to explore solutions to common problems task writers encounter, and to ease the upgrade path for contrib tasks.\n\n**These APIs should be considered highly unstable. Depend on them at your own risk!**\n\n_Over time, some of the functionality provided here may be incorporated directly into grunt for mainstream use. Until then, you may require `grunt-lib-contrib` as a dependency in your projects, but be very careful to specify an exact version number instead of a range, as backwards-incompatible changes are likely to be introduced._\n\n### Helper Functions\n\n#### getNamespaceDeclaration(ns)\n\nThis helper is used to build JS namespace declarations.\n\n#### optsToArgs(options)\n\nConvert an object to an array of CLI arguments, which can be used with `child_process.spawn()`.\n\n```js\n// Example\n{\n  fooBar: \'a\',        // [\'--foo-bar\', \'a\']\n  fooBar: 1,          // [\'--foo-bar\', \'1\']\n  fooBar: true,       // [\'--foo-bar\']\n  fooBar: false,      //\n  fooBar: [\'a\', \'b\']  // [\'--foo-bar\', \'a\', \'--foo-bar\', \'b\']\n}\n```\n\n#### stripPath(pth, strip)\n\nStrip a path from a path. normalize both paths for best results.\n\n#### minMaxInfo(min, max, report)\n\nHelper for logging compressed, uncompressed and gzipped sizes of strings.\n\n#### report\nChoices: `false`, `\'min\'`, `\'gzip\'`\nDefault: `false`\n\nEither do not report anything, report only minification result, or report minification and gzip results.\n\n**Important** Including `\'gzip\'` results can make this task 5-10x slower depending on the size of the file.\n\n\n```js\nvar max = grunt.file.read(\'max.js\');\nvar min = minify(max);\nminMaxInfo(min, max, \'gzip\');\n```\n\nWould print:\n\n```\nOriginal: 495 bytes.\nMinified: 396 bytes.\nGzipped: 36 bytes.\n```\n\n--\n\n*Lib submitted by [Tyler Kellen](https://goingslowly.com/).*',
+185 silly resolved     readmeFilename: 'README.md',
+185 silly resolved     _id: 'grunt-lib-contrib@0.6.1',
+185 silly resolved     _from: 'grunt-lib-contrib@~0.6.1' },
+185 silly resolved   { name: 'uglify-js',
+185 silly resolved     description: 'JavaScript parser, mangler/compressor and beautifier toolkit',
+185 silly resolved     homepage: 'http://lisperator.net/uglifyjs',
+185 silly resolved     main: 'tools/node.js',
+185 silly resolved     version: '2.4.15',
+185 silly resolved     engines: { node: '>=0.4.0' },
+185 silly resolved     maintainers: [ [Object] ],
+185 silly resolved     repository: { type: 'git', url: 'https://github.com/mishoo/UglifyJS2.git' },
+185 silly resolved     dependencies:
+185 silly resolved      { async: '~0.2.6',
+185 silly resolved        'source-map': '0.1.34',
+185 silly resolved        optimist: '~0.3.5',
+185 silly resolved        'uglify-to-browserify': '~1.0.0' },
+185 silly resolved     browserify: { transform: [Object] },
+185 silly resolved     bin: { uglifyjs: 'bin/uglifyjs' },
+185 silly resolved     scripts: { test: 'node test/run-tests.js' },
+185 silly resolved     readme: 'UglifyJS 2\n==========\n[![Build Status](https://travis-ci.org/mishoo/UglifyJS2.png)](https://travis-ci.org/mishoo/UglifyJS2)\n\nUglifyJS is a JavaScript parser, minifier, compressor or beautifier toolkit.\n\nThis page documents the command line utility.  For\n[API and internals documentation see my website](http://lisperator.net/uglifyjs/).\nThere\'s also an\n[in-browser online demo](http://lisperator.net/uglifyjs/#demo) (for Firefox,\nChrome and probably Safari).\n\nInstall\n-------\n\nFirst make sure you have installed the latest version of [node.js](http://nodejs.org/)\n(You may need to restart your computer after this step).\n\nFrom NPM for use as a command line app:\n\n    npm install uglify-js -g\n\nFrom NPM for programmatic use:\n\n    npm install uglify-js\n\nFrom Git:\n\n    git clone git://github.com/mishoo/UglifyJS2.git\n    cd UglifyJS2\n    npm link .\n\nUsage\n-----\n\n    uglifyjs [input files] [options]\n\nUglifyJS2 can take multiple input files.  It\'s recommended that you pass the\ninput files first, then pass the options.  UglifyJS will parse input files\nin sequence and apply any compression options.  The files are parsed in the\nsame global scope, that is, a reference from a file to some\nvariable/function declared in another file will be matched properly.\n\nIf you want to read from STDIN instead, pass a single dash instead of input\nfiles.\n\nThe available options are:\n\n```\n  --source-map       Specify an output file where to generate source map.\n                                                                        [string]\n  --source-map-root  The path to the original source to be included in the\n                     source map.                                        [string]\n  --source-map-url   The path to the source map to be added in //#\n                     sourceMappingURL.  Defaults to the value passed with\n                     --source-map.                                      [string]\n  --source-map-include-sources\n                     Pass this flag if you want to include the content of\n                     source files in the source map as sourcesContent\n                     property.                                         [boolean]\n  --in-source-map    Input source map, useful if you\'re compressing JS that was\n                     generated from some other original code.\n  --screw-ie8        Pass this flag if you don\'t care about full compliance\n                     with Internet Explorer 6-8 quirks (by default UglifyJS\n                     will try to be IE-proof).                         [boolean]\n  --expr             Parse a single expression, rather than a program (for\n                     parsing JSON)                                     [boolean]\n  -p, --prefix       Skip prefix for original filenames that appear in source\n                     maps. For example -p 3 will drop 3 directories from file\n                     names and ensure they are relative paths. You can also\n                     specify -p relative, which will make UglifyJS figure out\n                     itself the relative paths between original sources, the\n                     source map and the output file.                    [string]\n  -o, --output       Output file (default STDOUT).\n  -b, --beautify     Beautify output/specify output options.            [string]\n  -m, --mangle       Mangle names/pass mangler options.                 [string]\n  -r, --reserved     Reserved names to exclude from mangling.\n  -c, --compress     Enable compressor/pass compressor options. Pass options\n                     like -c hoist_vars=false,if_return=false. Use -c with no\n                     argument to use the default compression options.   [string]\n  -d, --define       Global definitions                                 [string]\n  -e, --enclose      Embed everything in a big function, with a configurable\n                     parameter/argument list.                           [string]\n  --comments         Preserve copyright comments in the output. By default this\n                     works like Google Closure, keeping JSDoc-style comments\n                     that contain "@license" or "@preserve". You can optionally\n                     pass one of the following arguments to this flag:\n                     - "all" to keep all comments\n                     - a valid JS regexp (needs to start with a slash) to keep\n                     only comments that match.\n                     Note that currently not *all* comments can be kept when\n                     compression is on, because of dead code removal or\n                     cascading statements into sequences.               [string]\n  --preamble         Preamble to prepend to the output.  You can use this to\n                     insert a comment, for example for licensing information.\n                     This will not be parsed, but the source map will adjust\n                     for its presence.\n  --stats            Display operations run time on STDERR.            [boolean]\n  --acorn            Use Acorn for parsing.                            [boolean]\n  --spidermonkey     Assume input files are SpiderMonkey AST format (as JSON).\n                                                                       [boolean]\n  --self             Build itself (UglifyJS2) as a library (implies\n                     --wrap=UglifyJS --export-all)                     [boolean]\n  --wrap             Embed everything in a big function, making the “exports”\n                     and “global” variables available. You need to pass an\n                     argument to this option to specify the name that your\n                     module will take when included in, say, a browser.\n                                                                        [string]\n  --export-all       Only used when --wrap, this tells UglifyJS to add code to\n                     automatically export all globals.                 [boolean]\n  --lint             Display some scope warnings                       [boolean]\n  -v, --verbose      Verbose                                           [boolean]\n  -V, --version      Print version number and exit.                    [boolean]\n```\n\nSpecify `--output` (`-o`) to declare the output file.  Otherwise the output\ngoes to STDOUT.\n\n## Source map options\n\nUglifyJS2 can generate a source map file, which is highly useful for\ndebugging your compressed JavaScript.  To get a source map, pass\n`--source-map output.js.map` (full path to the file where you want the\nsource map dumped).\n\nAdditionally you might need `--source-map-root` to pass the URL where the\noriginal files can be found.  In case you are passing full paths to input\nfiles to UglifyJS, you can use `--prefix` (`-p`) to specify the number of\ndirectories to drop from the path prefix when declaring files in the source\nmap.\n\nFor example:\n\n    uglifyjs /home/doe/work/foo/src/js/file1.js \\\n             /home/doe/work/foo/src/js/file2.js \\\n             -o foo.min.js \\\n             --source-map foo.min.js.map \\\n             --source-map-root http://foo.com/src \\\n             -p 5 -c -m\n\nThe above will compress and mangle `file1.js` and `file2.js`, will drop the\noutput in `foo.min.js` and the source map in `foo.min.js.map`.  The source\nmapping will refer to `http://foo.com/src/js/file1.js` and\n`http://foo.com/src/js/file2.js` (in fact it will list `http://foo.com/src`\nas the source map root, and the original files as `js/file1.js` and\n`js/file2.js`).\n\n### Composed source map\n\nWhen you\'re compressing JS code that was output by a compiler such as\nCoffeeScript, mapping to the JS code won\'t be too helpful.  Instead, you\'d\nlike to map back to the original code (i.e. CoffeeScript).  UglifyJS has an\noption to take an input source map.  Assuming you have a mapping from\nCoffeeScript → compiled JS, UglifyJS can generate a map from CoffeeScript →\ncompressed JS by mapping every token in the compiled JS to its original\nlocation.\n\nTo use this feature you need to pass `--in-source-map\n/path/to/input/source.map`.  Normally the input source map should also point\nto the file containing the generated JS, so if that\'s correct you can omit\ninput files from the command line.\n\n## Mangler options\n\nTo enable the mangler you need to pass `--mangle` (`-m`).  The following\n(comma-separated) options are supported:\n\n- `sort` — to assign shorter names to most frequently used variables.  This\n  saves a few hundred bytes on jQuery before gzip, but the output is\n  _bigger_ after gzip (and seems to happen for other libraries I tried it\n  on) therefore it\'s not enabled by default.\n\n- `toplevel` — mangle names declared in the toplevel scope (disabled by\n  default).\n\n- `eval` — mangle names visible in scopes where `eval` or `with` are used\n  (disabled by default).\n\nWhen mangling is enabled but you want to prevent certain names from being\nmangled, you can declare those names with `--reserved` (`-r`) — pass a\ncomma-separated list of names.  For example:\n\n    uglifyjs ... -m -r \'$,require,exports\'\n\nto prevent the `require`, `exports` and `$` names from being changed.\n\n## Compressor options\n\nYou need to pass `--compress` (`-c`) to enable the compressor.  Optionally\nyou can pass a comma-separated list of options.  Options are in the form\n`foo=bar`, or just `foo` (the latter implies a boolean option that you want\nto set `true`; it\'s effectively a shortcut for `foo=true`).\n\n- `sequences` -- join consecutive simple statements using the comma operator\n\n- `properties` -- rewrite property access using the dot notation, for\n  example `foo["bar"] → foo.bar`\n\n- `dead_code` -- remove unreachable code\n\n- `drop_debugger` -- remove `debugger;` statements\n\n- `unsafe` (default: false) -- apply "unsafe" transformations (discussion below)\n\n- `conditionals` -- apply optimizations for `if`-s and conditional\n  expressions\n\n- `comparisons` -- apply certain optimizations to binary nodes, for example:\n  `!(a <= b) → a > b` (only when `unsafe`), attempts to negate binary nodes,\n  e.g. `a = !b && !c && !d && !e → a=!(b||c||d||e)` etc.\n\n- `evaluate` -- attempt to evaluate constant expressions\n\n- `booleans` -- various optimizations for boolean context, for example `!!a\n  ? b : c → a ? b : c`\n\n- `loops` -- optimizations for `do`, `while` and `for` loops when we can\n  statically determine the condition\n\n- `unused` -- drop unreferenced functions and variables\n\n- `hoist_funs` -- hoist function declarations\n\n- `hoist_vars` (default: false) -- hoist `var` declarations (this is `false`\n  by default because it seems to increase the size of the output in general)\n\n- `if_return` -- optimizations for if/return and if/continue\n\n- `join_vars` -- join consecutive `var` statements\n\n- `cascade` -- small optimization for sequences, transform `x, x` into `x`\n  and `x = something(), x` into `x = something()`\n\n- `warnings` -- display warnings when dropping unreachable code or unused\n  declarations etc.\n\n- `negate_iife` -- negate "Immediately-Called Function Expressions"\n  where the return value is discarded, to avoid the parens that the\n  code generator would insert.\n\n- `pure_getters` -- the default is `false`.  If you pass `true` for\n  this, UglifyJS will assume that object property access\n  (e.g. `foo.bar` or `foo["bar"]`) doesn\'t have any side effects.\n\n- `pure_funcs` -- default `null`.  You can pass an array of names and\n  UglifyJS will assume that those functions do not produce side\n  effects.  DANGER: will not check if the name is redefined in scope.\n  An example case here, for instance `var q = Math.floor(a/b)`.  If\n  variable `q` is not used elsewhere, UglifyJS will drop it, but will\n  still keep the `Math.floor(a/b)`, not knowing what it does.  You can\n  pass `pure_funcs: [ \'Math.floor\' ]` to let it know that this\n  function won\'t produce any side effect, in which case the whole\n  statement would get discarded.  The current implementation adds some\n  overhead (compression will be slower).\n\n- `drop_console` -- default `false`.  Pass `true` to discard calls to\n  `console.*` functions.\n\n### The `unsafe` option\n\nIt enables some transformations that *might* break code logic in certain\ncontrived cases, but should be fine for most code.  You might want to try it\non your own code, it should reduce the minified size.  Here\'s what happens\nwhen this flag is on:\n\n- `new Array(1, 2, 3)` or `Array(1, 2, 3)` → `[1, 2, 3 ]`\n- `new Object()` → `{}`\n- `String(exp)` or `exp.toString()` → `"" + exp`\n- `new Object/RegExp/Function/Error/Array (...)` → we discard the `new`\n- `typeof foo == "undefined"` → `foo === void 0`\n- `void 0` → `undefined` (if there is a variable named "undefined" in\n  scope; we do it because the variable name will be mangled, typically\n  reduced to a single character).\n\n### Conditional compilation\n\nYou can use the `--define` (`-d`) switch in order to declare global\nvariables that UglifyJS will assume to be constants (unless defined in\nscope).  For example if you pass `--define DEBUG=false` then, coupled with\ndead code removal UglifyJS will discard the following from the output:\n```javascript\nif (DEBUG) {\n\tconsole.log("debug stuff");\n}\n```\n\nUglifyJS will warn about the condition being always false and about dropping\nunreachable code; for now there is no option to turn off only this specific\nwarning, you can pass `warnings=false` to turn off *all* warnings.\n\nAnother way of doing that is to declare your globals as constants in a\nseparate file and include it into the build.  For example you can have a\n`build/defines.js` file with the following:\n```javascript\nconst DEBUG = false;\nconst PRODUCTION = true;\n// etc.\n```\n\nand build your code like this:\n\n    uglifyjs build/defines.js js/foo.js js/bar.js... -c\n\nUglifyJS will notice the constants and, since they cannot be altered, it\nwill evaluate references to them to the value itself and drop unreachable\ncode as usual.  The possible downside of this approach is that the build\nwill contain the `const` declarations.\n\n<a name="codegen-options"></a>\n## Beautifier options\n\nThe code generator tries to output shortest code possible by default.  In\ncase you want beautified output, pass `--beautify` (`-b`).  Optionally you\ncan pass additional arguments that control the code output:\n\n- `beautify` (default `true`) -- whether to actually beautify the output.\n  Passing `-b` will set this to true, but you might need to pass `-b` even\n  when you want to generate minified code, in order to specify additional\n  arguments, so you can use `-b beautify=false` to override it.\n- `indent-level` (default 4)\n- `indent-start` (default 0) -- prefix all lines by that many spaces\n- `quote-keys` (default `false`) -- pass `true` to quote all keys in literal\n  objects\n- `space-colon` (default `true`) -- insert a space after the colon signs\n- `ascii-only` (default `false`) -- escape Unicode characters in strings and\n  regexps\n- `inline-script` (default `false`) -- escape the slash in occurrences of\n  `</script` in strings\n- `width` (default 80) -- only takes effect when beautification is on, this\n  specifies an (orientative) line width that the beautifier will try to\n  obey.  It refers to the width of the line text (excluding indentation).\n  It doesn\'t work very well currently, but it does make the code generated\n  by UglifyJS more readable.\n- `max-line-len` (default 32000) -- maximum line length (for uglified code)\n- `bracketize` (default `false`) -- always insert brackets in `if`, `for`,\n  `do`, `while` or `with` statements, even if their body is a single\n  statement.\n- `semicolons` (default `true`) -- separate statements with semicolons.  If\n  you pass `false` then whenever possible we will use a newline instead of a\n  semicolon, leading to more readable output of uglified code (size before\n  gzip could be smaller; size after gzip insignificantly larger).\n- `preamble` (default `null`) -- when passed it must be a string and\n  it will be prepended to the output literally.  The source map will\n  adjust for this text.  Can be used to insert a comment containing\n  licensing information, for example.\n\n### Keeping copyright notices or other comments\n\nYou can pass `--comments` to retain certain comments in the output.  By\ndefault it will keep JSDoc-style comments that contain "@preserve",\n"@license" or "@cc_on" (conditional compilation for IE).  You can pass\n`--comments all` to keep all the comments, or a valid JavaScript regexp to\nkeep only comments that match this regexp.  For example `--comments\n\'/foo|bar/\'` will keep only comments that contain "foo" or "bar".\n\nNote, however, that there might be situations where comments are lost.  For\nexample:\n```javascript\nfunction f() {\n\t/** @preserve Foo Bar */\n\tfunction g() {\n\t  // this function is never called\n\t}\n\treturn something();\n}\n```\n\nEven though it has "@preserve", the comment will be lost because the inner\nfunction `g` (which is the AST node to which the comment is attached to) is\ndiscarded by the compressor as not referenced.\n\nThe safest comments where to place copyright information (or other info that\nneeds to be kept in the output) are comments attached to toplevel nodes.\n\n## Support for the SpiderMonkey AST\n\nUglifyJS2 has its own abstract syntax tree format; for\n[practical reasons](http://lisperator.net/blog/uglifyjs-why-not-switching-to-spidermonkey-ast/)\nwe can\'t easily change to using the SpiderMonkey AST internally.  However,\nUglifyJS now has a converter which can import a SpiderMonkey AST.\n\nFor example [Acorn][acorn] is a super-fast parser that produces a\nSpiderMonkey AST.  It has a small CLI utility that parses one file and dumps\nthe AST in JSON on the standard output.  To use UglifyJS to mangle and\ncompress that:\n\n    acorn file.js | uglifyjs --spidermonkey -m -c\n\nThe `--spidermonkey` option tells UglifyJS that all input files are not\nJavaScript, but JS code described in SpiderMonkey AST in JSON.  Therefore we\ndon\'t use our own parser in this case, but just transform that AST into our\ninternal AST.\n\n### Use Acorn for parsing\n\nMore for fun, I added the `--acorn` option which will use Acorn to do all\nthe parsing.  If you pass this option, UglifyJS will `require("acorn")`.\n\nAcorn is really fast (e.g. 250ms instead of 380ms on some 650K code), but\nconverting the SpiderMonkey tree that Acorn produces takes another 150ms so\nin total it\'s a bit more than just using UglifyJS\'s own parser.\n\nAPI Reference\n-------------\n\nAssuming installation via NPM, you can load UglifyJS in your application\nlike this:\n```javascript\nvar UglifyJS = require("uglify-js");\n```\n\nIt exports a lot of names, but I\'ll discuss here the basics that are needed\nfor parsing, mangling and compressing a piece of code.  The sequence is (1)\nparse, (2) compress, (3) mangle, (4) generate output code.\n\n### The simple way\n\nThere\'s a single toplevel function which combines all the steps.  If you\ndon\'t need additional customization, you might want to go with `minify`.\nExample:\n```javascript\nvar result = UglifyJS.minify("/path/to/file.js");\nconsole.log(result.code); // minified output\n// if you need to pass code instead of file name\nvar result = UglifyJS.minify("var b = function () {};", {fromString: true});\n```\n\nYou can also compress multiple files:\n```javascript\nvar result = UglifyJS.minify([ "file1.js", "file2.js", "file3.js" ]);\nconsole.log(result.code);\n```\n\nTo generate a source map:\n```javascript\nvar result = UglifyJS.minify([ "file1.js", "file2.js", "file3.js" ], {\n\toutSourceMap: "out.js.map"\n});\nconsole.log(result.code); // minified output\nconsole.log(result.map);\n```\n\nNote that the source map is not saved in a file, it\'s just returned in\n`result.map`.  The value passed for `outSourceMap` is only used to set the\n`file` attribute in the source map (see [the spec][sm-spec]).\n\nYou can also specify sourceRoot property to be included in source map:\n```javascript\nvar result = UglifyJS.minify([ "file1.js", "file2.js", "file3.js" ], {\n\toutSourceMap: "out.js.map",\n\tsourceRoot: "http://example.com/src"\n});\n```\n\nIf you\'re compressing compiled JavaScript and have a source map for it, you\ncan use the `inSourceMap` argument:\n```javascript\nvar result = UglifyJS.minify("compiled.js", {\n\tinSourceMap: "compiled.js.map",\n\toutSourceMap: "minified.js.map"\n});\n// same as before, it returns `code` and `map`\n```\n\nThe `inSourceMap` is only used if you also request `outSourceMap` (it makes\nno sense otherwise).\n\nOther options:\n\n- `warnings` (default `false`) — pass `true` to display compressor warnings.\n\n- `fromString` (default `false`) — if you pass `true` then you can pass\n  JavaScript source code, rather than file names.\n\n- `mangle` — pass `false` to skip mangling names.\n\n- `output` (default `null`) — pass an object if you wish to specify\n  additional [output options][codegen].  The defaults are optimized\n  for best compression.\n\n- `compress` (default `{}`) — pass `false` to skip compressing entirely.\n  Pass an object to specify custom [compressor options][compressor].\n\nWe could add more options to `UglifyJS.minify` — if you need additional\nfunctionality please suggest!\n\n### The hard way\n\nFollowing there\'s more detailed API info, in case the `minify` function is\ntoo simple for your needs.\n\n#### The parser\n```javascript\nvar toplevel_ast = UglifyJS.parse(code, options);\n```\n\n`options` is optional and if present it must be an object.  The following\nproperties are available:\n\n- `strict` — disable automatic semicolon insertion and support for trailing\n  comma in arrays and objects\n- `filename` — the name of the file where this code is coming from\n- `toplevel` — a `toplevel` node (as returned by a previous invocation of\n  `parse`)\n\nThe last two options are useful when you\'d like to minify multiple files and\nget a single file as the output and a proper source map.  Our CLI tool does\nsomething like this:\n```javascript\nvar toplevel = null;\nfiles.forEach(function(file){\n\tvar code = fs.readFileSync(file, "utf8");\n\ttoplevel = UglifyJS.parse(code, {\n\t\tfilename: file,\n\t\ttoplevel: toplevel\n\t});\n});\n```\n\nAfter this, we have in `toplevel` a big AST containing all our files, with\neach token having proper information about where it came from.\n\n#### Scope information\n\nUglifyJS contains a scope analyzer that you need to call manually before\ncompressing or mangling.  Basically it augments various nodes in the AST\nwith information about where is a name defined, how many times is a name\nreferenced, if it is a global or not, if a function is using `eval` or the\n`with` statement etc.  I will discuss this some place else, for now what\'s\nimportant to know is that you need to call the following before doing\nanything with the tree:\n```javascript\ntoplevel.figure_out_scope()\n```\n\n#### Compression\n\nLike this:\n```javascript\nvar compressor = UglifyJS.Compressor(options);\nvar compressed_ast = toplevel.transform(compressor);\n```\n\nThe `options` can be missing.  Available options are discussed above in\n“Compressor options”.  Defaults should lead to best compression in most\nscripts.\n\nThe compressor is destructive, so don\'t rely that `toplevel` remains the\noriginal tree.\n\n#### Mangling\n\nAfter compression it is a good idea to call again `figure_out_scope` (since\nthe compressor might drop unused variables / unreachable code and this might\nchange the number of identifiers or their position).  Optionally, you can\ncall a trick that helps after Gzip (counting character frequency in\nnon-mangleable words).  Example:\n```javascript\ncompressed_ast.figure_out_scope();\ncompressed_ast.compute_char_frequency();\ncompressed_ast.mangle_names();\n```\n\n#### Generating output\n\nAST nodes have a `print` method that takes an output stream.  Essentially,\nto generate code you do this:\n```javascript\nvar stream = UglifyJS.OutputStream(options);\ncompressed_ast.print(stream);\nvar code = stream.toString(); // this is your minified code\n```\n\nor, for a shortcut you can do:\n```javascript\nvar code = compressed_ast.print_to_string(options);\n```\n\nAs usual, `options` is optional.  The output stream accepts a lot of otions,\nmost of them documented above in section “Beautifier options”.  The two\nwhich we care about here are `source_map` and `comments`.\n\n#### Keeping comments in the output\n\nIn order to keep certain comments in the output you need to pass the\n`comments` option.  Pass a RegExp or a function.  If you pass a RegExp, only\nthose comments whose body matches the regexp will be kept.  Note that body\nmeans without the initial `//` or `/*`.  If you pass a function, it will be\ncalled for every comment in the tree and will receive two arguments: the\nnode that the comment is attached to, and the comment token itself.\n\nThe comment token has these properties:\n\n- `type`: "comment1" for single-line comments or "comment2" for multi-line\n  comments\n- `value`: the comment body\n- `pos` and `endpos`: the start/end positions (zero-based indexes) in the\n  original code where this comment appears\n- `line` and `col`: the line and column where this comment appears in the\n  original code\n- `file` — the file name of the original file\n- `nlb` — true if there was a newline before this comment in the original\n  code, or if this comment contains a newline.\n\nYour function should return `true` to keep the comment, or a falsy value\notherwise.\n\n#### Generating a source mapping\n\nYou need to pass the `source_map` argument when calling `print`.  It needs\nto be a `SourceMap` object (which is a thin wrapper on top of the\n[source-map][source-map] library).\n\nExample:\n```javascript\nvar source_map = UglifyJS.SourceMap(source_map_options);\nvar stream = UglifyJS.OutputStream({\n\t...\n\tsource_map: source_map\n});\ncompressed_ast.print(stream);\n\nvar code = stream.toString();\nvar map = source_map.toString(); // json output for your source map\n```\n\nThe `source_map_options` (optional) can contain the following properties:\n\n- `file`: the name of the JavaScript output file that this mapping refers to\n- `root`: the `sourceRoot` property (see the [spec][sm-spec])\n- `orig`: the "original source map", handy when you compress generated JS\n  and want to map the minified output back to the original code where it\n  came from.  It can be simply a string in JSON, or a JSON object containing\n  the original source map.\n\n  [acorn]: https://github.com/marijnh/acorn\n  [source-map]: https://github.com/mozilla/source-map\n  [sm-spec]: https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit\n  [codegen]: http://lisperator.net/uglifyjs/codegen\n  [compressor]: http://lisperator.net/uglifyjs/compress\n',
+185 silly resolved     readmeFilename: 'README.md',
+185 silly resolved     bugs: { url: 'https://github.com/mishoo/UglifyJS2/issues' },
+185 silly resolved     _id: 'uglify-js@2.4.15',
+185 silly resolved     _from: 'uglify-js@~2.4.0' } ]
+186 info install grunt-lib-contrib@0.6.1 into /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify
+187 info install uglify-js@2.4.15 into /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify
+188 info installOne grunt-lib-contrib@0.6.1
+189 info installOne uglify-js@2.4.15
+190 info /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/grunt-lib-contrib unbuild
+191 info /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/uglify-js unbuild
+192 verbose tar unpack /Users/christopheresplin/.npm/grunt-lib-contrib/0.6.1/package.tgz
+193 silly lockFile 84275212-y-node-modules-grunt-lib-contrib tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/grunt-lib-contrib
+194 verbose lock tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/grunt-lib-contrib /Users/christopheresplin/.npm/84275212-y-node-modules-grunt-lib-contrib.lock
+195 silly lockFile d4fa42eb-nt-lib-contrib-0-6-1-package-tgz tar:///Users/christopheresplin/.npm/grunt-lib-contrib/0.6.1/package.tgz
+196 verbose lock tar:///Users/christopheresplin/.npm/grunt-lib-contrib/0.6.1/package.tgz /Users/christopheresplin/.npm/d4fa42eb-nt-lib-contrib-0-6-1-package-tgz.lock
+197 verbose tar unpack /Users/christopheresplin/.npm/uglify-js/2.4.15/package.tgz
+198 silly lockFile a2c3c934-ib-uglify-node-modules-uglify-js tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/uglify-js
+199 verbose lock tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/uglify-js /Users/christopheresplin/.npm/a2c3c934-ib-uglify-node-modules-uglify-js.lock
+200 silly lockFile 9bbd667b-npm-uglify-js-2-4-15-package-tgz tar:///Users/christopheresplin/.npm/uglify-js/2.4.15/package.tgz
+201 verbose lock tar:///Users/christopheresplin/.npm/uglify-js/2.4.15/package.tgz /Users/christopheresplin/.npm/9bbd667b-npm-uglify-js-2-4-15-package-tgz.lock
+202 silly gunzTarPerm modes [ '755', '644' ]
+203 silly gunzTarPerm modes [ '755', '644' ]
+204 silly gunzTarPerm extractEntry package.json
+205 silly gunzTarPerm extractEntry package.json
+206 silly gunzTarPerm extractEntry .npmignore
+207 silly gunzTarPerm extractEntry README.md
+208 silly gunzTarPerm extractEntry .npmignore
+209 silly gunzTarPerm extractEntry README.md
+210 silly gunzTarPerm extractEntry Gruntfile.js
+211 silly gunzTarPerm extractEntry AUTHORS
+212 silly gunzTarPerm extractEntry LICENSE
+213 silly gunzTarPerm extractEntry CHANGELOG
+214 silly gunzTarPerm extractEntry .jshintrc
+215 silly gunzTarPerm extractEntry .travis.yml
+216 silly gunzTarPerm extractEntry bin/uglifyjs
+217 silly gunzTarPerm extractEntry LICENSE-MIT
+218 silly gunzTarPerm extractEntry .gitattributes
+219 silly gunzTarPerm extractEntry lib/contrib.js
+220 silly gunzTarPerm extractEntry .travis.yml
+221 silly gunzTarPerm extractEntry test/lib_test.js
+222 silly gunzTarPerm extractEntry lib/ast.js
+223 silly gunzTarPerm extractEntry lib/compress.js
+224 silly gunzTarPerm extractEntry lib/mozilla-ast.js
+225 silly gunzTarPerm extractEntry lib/output.js
+226 silly gunzTarPerm extractEntry lib/parse.js
+227 silly gunzTarPerm extractEntry lib/scope.js
+228 silly gunzTarPerm extractEntry lib/sourcemap.js
+229 silly gunzTarPerm extractEntry lib/transform.js
+230 silly gunzTarPerm extractEntry lib/utils.js
+231 silly gunzTarPerm extractEntry test/run-tests.js
+232 silly gunzTarPerm extractEntry test/compress/arrays.js
+233 silly gunzTarPerm extractEntry test/compress/issue-12.js
+234 silly gunzTarPerm extractEntry test/compress/issue-126.js
+235 silly gunzTarPerm extractEntry test/compress/issue-143.js
+236 silly gunzTarPerm extractEntry test/compress/issue-105.js
+237 silly gunzTarPerm extractEntry test/compress/issue-267.js
+238 silly gunzTarPerm extractEntry test/compress/issue-269.js
+239 silly gunzTarPerm extractEntry test/compress/issue-44.js
+240 silly gunzTarPerm extractEntry test/compress/issue-59.js
+241 silly gunzTarPerm extractEntry test/compress/labels.js
+242 silly gunzTarPerm extractEntry test/compress/drop-unused.js
+243 silly gunzTarPerm extractEntry test/compress/loops.js
+244 silly gunzTarPerm extractEntry test/compress/debugger.js
+245 silly gunzTarPerm extractEntry test/compress/negate-iife.js
+246 silly gunzTarPerm extractEntry test/compress/dead-code.js
+247 silly gunzTarPerm extractEntry test/compress/properties.js
+248 silly gunzTarPerm extractEntry test/compress/conditionals.js
+249 silly gunzTarPerm extractEntry test/compress/sequences.js
+250 silly gunzTarPerm extractEntry test/compress/concat-strings.js
+251 silly gunzTarPerm extractEntry test/compress/switch.js
+252 silly gunzTarPerm extractEntry test/compress/blocks.js
+253 silly gunzTarPerm extractEntry test/compress/typeof.js
+254 silly gunzTarPerm extractEntry test/compress/issue-22.js
+255 silly gunzTarPerm extractEntry tools/node.js
+256 silly lockFile 84275212-y-node-modules-grunt-lib-contrib tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/grunt-lib-contrib
+257 silly lockFile 84275212-y-node-modules-grunt-lib-contrib tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/grunt-lib-contrib
+258 silly lockFile d4fa42eb-nt-lib-contrib-0-6-1-package-tgz tar:///Users/christopheresplin/.npm/grunt-lib-contrib/0.6.1/package.tgz
+259 silly lockFile d4fa42eb-nt-lib-contrib-0-6-1-package-tgz tar:///Users/christopheresplin/.npm/grunt-lib-contrib/0.6.1/package.tgz
+260 info preinstall grunt-lib-contrib@0.6.1
+261 verbose readDependencies using package.json deps
+262 verbose readDependencies using package.json deps
+263 verbose cache add [ 'zlib-browserify@0.0.1', null ]
+264 verbose cache add name=undefined spec="zlib-browserify@0.0.1" args=["zlib-browserify@0.0.1",null]
+265 verbose parsed url { protocol: null,
+265 verbose parsed url   slashes: null,
+265 verbose parsed url   auth: null,
+265 verbose parsed url   host: null,
+265 verbose parsed url   port: null,
+265 verbose parsed url   hostname: null,
+265 verbose parsed url   hash: null,
+265 verbose parsed url   search: null,
+265 verbose parsed url   query: null,
+265 verbose parsed url   pathname: 'zlib-browserify@0.0.1',
+265 verbose parsed url   path: 'zlib-browserify@0.0.1',
+265 verbose parsed url   href: 'zlib-browserify@0.0.1' }
+266 verbose cache add name="zlib-browserify" spec="0.0.1" args=["zlib-browserify","0.0.1"]
+267 verbose parsed url { protocol: null,
+267 verbose parsed url   slashes: null,
+267 verbose parsed url   auth: null,
+267 verbose parsed url   host: null,
+267 verbose parsed url   port: null,
+267 verbose parsed url   hostname: null,
+267 verbose parsed url   hash: null,
+267 verbose parsed url   search: null,
+267 verbose parsed url   query: null,
+267 verbose parsed url   pathname: '0.0.1',
+267 verbose parsed url   path: '0.0.1',
+267 verbose parsed url   href: '0.0.1' }
+268 verbose addNamed [ 'zlib-browserify', '0.0.1' ]
+269 verbose addNamed [ '0.0.1', '0.0.1' ]
+270 silly lockFile 84e77944-zlib-browserify-0-0-1 zlib-browserify@0.0.1
+271 verbose lock zlib-browserify@0.0.1 /Users/christopheresplin/.npm/84e77944-zlib-browserify-0-0-1.lock
+272 verbose url raw zlib-browserify/0.0.1
+273 verbose url resolving [ 'https://registry.npmjs.org/', './zlib-browserify/0.0.1' ]
+274 verbose url resolved https://registry.npmjs.org/zlib-browserify/0.0.1
+275 info trying registry request attempt 1 at 12:23:00
+276 verbose etag "C7Y2K04BKK3CFVNHBWQVLNNTV"
+277 http GET https://registry.npmjs.org/zlib-browserify/0.0.1
+278 silly lockFile a2c3c934-ib-uglify-node-modules-uglify-js tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/uglify-js
+279 silly lockFile a2c3c934-ib-uglify-node-modules-uglify-js tar:///Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/uglify-js
+280 silly lockFile 9bbd667b-npm-uglify-js-2-4-15-package-tgz tar:///Users/christopheresplin/.npm/uglify-js/2.4.15/package.tgz
+281 silly lockFile 9bbd667b-npm-uglify-js-2-4-15-package-tgz tar:///Users/christopheresplin/.npm/uglify-js/2.4.15/package.tgz
+282 info preinstall uglify-js@2.4.15
+283 verbose readDependencies using package.json deps
+284 verbose readDependencies using package.json deps
+285 verbose cache add [ 'async@~0.2.6', null ]
+286 verbose cache add name=undefined spec="async@~0.2.6" args=["async@~0.2.6",null]
+287 verbose parsed url { protocol: null,
+287 verbose parsed url   slashes: null,
+287 verbose parsed url   auth: null,
+287 verbose parsed url   host: null,
+287 verbose parsed url   port: null,
+287 verbose parsed url   hostname: null,
+287 verbose parsed url   hash: null,
+287 verbose parsed url   search: null,
+287 verbose parsed url   query: null,
+287 verbose parsed url   pathname: 'async@~0.2.6',
+287 verbose parsed url   path: 'async@~0.2.6',
+287 verbose parsed url   href: 'async@~0.2.6' }
+288 verbose cache add name="async" spec="~0.2.6" args=["async","~0.2.6"]
+289 verbose parsed url { protocol: null,
+289 verbose parsed url   slashes: null,
+289 verbose parsed url   auth: null,
+289 verbose parsed url   host: null,
+289 verbose parsed url   port: null,
+289 verbose parsed url   hostname: null,
+289 verbose parsed url   hash: null,
+289 verbose parsed url   search: null,
+289 verbose parsed url   query: null,
+289 verbose parsed url   pathname: '~0.2.6',
+289 verbose parsed url   path: '~0.2.6',
+289 verbose parsed url   href: '~0.2.6' }
+290 verbose addNamed [ 'async', '~0.2.6' ]
+291 verbose addNamed [ null, '>=0.2.6-0 <0.3.0-0' ]
+292 silly lockFile e00b1d77-async-0-2-6 async@~0.2.6
+293 verbose lock async@~0.2.6 /Users/christopheresplin/.npm/e00b1d77-async-0-2-6.lock
+294 verbose cache add [ 'source-map@0.1.34', null ]
+295 verbose cache add name=undefined spec="source-map@0.1.34" args=["source-map@0.1.34",null]
+296 verbose parsed url { protocol: null,
+296 verbose parsed url   slashes: null,
+296 verbose parsed url   auth: null,
+296 verbose parsed url   host: null,
+296 verbose parsed url   port: null,
+296 verbose parsed url   hostname: null,
+296 verbose parsed url   hash: null,
+296 verbose parsed url   search: null,
+296 verbose parsed url   query: null,
+296 verbose parsed url   pathname: 'source-map@0.1.34',
+296 verbose parsed url   path: 'source-map@0.1.34',
+296 verbose parsed url   href: 'source-map@0.1.34' }
+297 verbose cache add name="source-map" spec="0.1.34" args=["source-map","0.1.34"]
+298 verbose parsed url { protocol: null,
+298 verbose parsed url   slashes: null,
+298 verbose parsed url   auth: null,
+298 verbose parsed url   host: null,
+298 verbose parsed url   port: null,
+298 verbose parsed url   hostname: null,
+298 verbose parsed url   hash: null,
+298 verbose parsed url   search: null,
+298 verbose parsed url   query: null,
+298 verbose parsed url   pathname: '0.1.34',
+298 verbose parsed url   path: '0.1.34',
+298 verbose parsed url   href: '0.1.34' }
+299 verbose addNamed [ 'source-map', '0.1.34' ]
+300 verbose addNamed [ '0.1.34', '0.1.34' ]
+301 silly lockFile 39026ad4-source-map-0-1-34 source-map@0.1.34
+302 verbose lock source-map@0.1.34 /Users/christopheresplin/.npm/39026ad4-source-map-0-1-34.lock
+303 verbose cache add [ 'optimist@~0.3.5', null ]
+304 verbose cache add name=undefined spec="optimist@~0.3.5" args=["optimist@~0.3.5",null]
+305 verbose parsed url { protocol: null,
+305 verbose parsed url   slashes: null,
+305 verbose parsed url   auth: null,
+305 verbose parsed url   host: null,
+305 verbose parsed url   port: null,
+305 verbose parsed url   hostname: null,
+305 verbose parsed url   hash: null,
+305 verbose parsed url   search: null,
+305 verbose parsed url   query: null,
+305 verbose parsed url   pathname: 'optimist@~0.3.5',
+305 verbose parsed url   path: 'optimist@~0.3.5',
+305 verbose parsed url   href: 'optimist@~0.3.5' }
+306 verbose cache add name="optimist" spec="~0.3.5" args=["optimist","~0.3.5"]
+307 verbose parsed url { protocol: null,
+307 verbose parsed url   slashes: null,
+307 verbose parsed url   auth: null,
+307 verbose parsed url   host: null,
+307 verbose parsed url   port: null,
+307 verbose parsed url   hostname: null,
+307 verbose parsed url   hash: null,
+307 verbose parsed url   search: null,
+307 verbose parsed url   query: null,
+307 verbose parsed url   pathname: '~0.3.5',
+307 verbose parsed url   path: '~0.3.5',
+307 verbose parsed url   href: '~0.3.5' }
+308 verbose addNamed [ 'optimist', '~0.3.5' ]
+309 verbose addNamed [ null, '>=0.3.5-0 <0.4.0-0' ]
+310 silly lockFile a1f99b53-optimist-0-3-5 optimist@~0.3.5
+311 verbose lock optimist@~0.3.5 /Users/christopheresplin/.npm/a1f99b53-optimist-0-3-5.lock
+312 verbose cache add [ 'uglify-to-browserify@~1.0.0', null ]
+313 verbose cache add name=undefined spec="uglify-to-browserify@~1.0.0" args=["uglify-to-browserify@~1.0.0",null]
+314 verbose parsed url { protocol: null,
+314 verbose parsed url   slashes: null,
+314 verbose parsed url   auth: null,
+314 verbose parsed url   host: null,
+314 verbose parsed url   port: null,
+314 verbose parsed url   hostname: null,
+314 verbose parsed url   hash: null,
+314 verbose parsed url   search: null,
+314 verbose parsed url   query: null,
+314 verbose parsed url   pathname: 'uglify-to-browserify@~1.0.0',
+314 verbose parsed url   path: 'uglify-to-browserify@~1.0.0',
+314 verbose parsed url   href: 'uglify-to-browserify@~1.0.0' }
+315 verbose cache add name="uglify-to-browserify" spec="~1.0.0" args=["uglify-to-browserify","~1.0.0"]
+316 verbose parsed url { protocol: null,
+316 verbose parsed url   slashes: null,
+316 verbose parsed url   auth: null,
+316 verbose parsed url   host: null,
+316 verbose parsed url   port: null,
+316 verbose parsed url   hostname: null,
+316 verbose parsed url   hash: null,
+316 verbose parsed url   search: null,
+316 verbose parsed url   query: null,
+316 verbose parsed url   pathname: '~1.0.0',
+316 verbose parsed url   path: '~1.0.0',
+316 verbose parsed url   href: '~1.0.0' }
+317 verbose addNamed [ 'uglify-to-browserify', '~1.0.0' ]
+318 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+319 silly lockFile 8d4498e3-uglify-to-browserify-1-0-0 uglify-to-browserify@~1.0.0
+320 verbose lock uglify-to-browserify@~1.0.0 /Users/christopheresplin/.npm/8d4498e3-uglify-to-browserify-1-0-0.lock
+321 silly addNameRange { name: 'async', range: '>=0.2.6-0 <0.3.0-0', hasData: false }
+322 silly addNameRange { name: 'optimist', range: '>=0.3.5-0 <0.4.0-0', hasData: false }
+323 silly addNameRange { name: 'uglify-to-browserify',
+323 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+323 silly addNameRange   hasData: false }
+324 verbose url raw source-map/0.1.34
+325 verbose url resolving [ 'https://registry.npmjs.org/', './source-map/0.1.34' ]
+326 verbose url resolved https://registry.npmjs.org/source-map/0.1.34
+327 info trying registry request attempt 1 at 12:23:00
+328 http GET https://registry.npmjs.org/source-map/0.1.34
+329 verbose url raw uglify-to-browserify
+330 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-to-browserify' ]
+331 verbose url resolved https://registry.npmjs.org/uglify-to-browserify
+332 info trying registry request attempt 1 at 12:23:00
+333 verbose etag "8RI4WO2M3VZ6HLQSNZ5PAHL3Y"
+334 http GET https://registry.npmjs.org/uglify-to-browserify
+335 verbose url raw async
+336 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+337 verbose url resolved https://registry.npmjs.org/async
+338 info trying registry request attempt 1 at 12:23:00
+339 verbose etag "7SOAH99JX3QRF1OJIVFAA7Y1R"
+340 http GET https://registry.npmjs.org/async
+341 verbose url raw optimist
+342 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+343 verbose url resolved https://registry.npmjs.org/optimist
+344 info trying registry request attempt 1 at 12:23:00
+345 verbose etag "AXT9E4YAAJFV2JXB96USQGBVP"
+346 http GET https://registry.npmjs.org/optimist
+347 http 401 https://registry.npmjs.org/async
+348 silly registry.get cb [ 304, undefined ]
+349 verbose etag async from cache
+350 silly addNameRange number 2 { name: 'async', range: '>=0.2.6-0 <0.3.0-0', hasData: true }
+351 silly addNameRange versions [ 'async',
+351 silly addNameRange   [ '0.1.0',
+351 silly addNameRange     '0.1.1',
+351 silly addNameRange     '0.1.2',
+351 silly addNameRange     '0.1.3',
+351 silly addNameRange     '0.1.4',
+351 silly addNameRange     '0.1.5',
+351 silly addNameRange     '0.1.6',
+351 silly addNameRange     '0.1.7',
+351 silly addNameRange     '0.1.8',
+351 silly addNameRange     '0.1.9',
+351 silly addNameRange     '0.1.10',
+351 silly addNameRange     '0.1.11',
+351 silly addNameRange     '0.1.12',
+351 silly addNameRange     '0.1.13',
+351 silly addNameRange     '0.1.14',
+351 silly addNameRange     '0.1.15',
+351 silly addNameRange     '0.1.16',
+351 silly addNameRange     '0.1.17',
+351 silly addNameRange     '0.1.18',
+351 silly addNameRange     '0.1.19',
+351 silly addNameRange     '0.1.20',
+351 silly addNameRange     '0.1.21',
+351 silly addNameRange     '0.1.22',
+351 silly addNameRange     '0.2.0',
+351 silly addNameRange     '0.2.1',
+351 silly addNameRange     '0.2.2',
+351 silly addNameRange     '0.2.3',
+351 silly addNameRange     '0.2.4',
+351 silly addNameRange     '0.2.5',
+351 silly addNameRange     '0.2.6',
+351 silly addNameRange     '0.2.7',
+351 silly addNameRange     '0.2.8',
+351 silly addNameRange     '0.2.9',
+351 silly addNameRange     '0.2.10',
+351 silly addNameRange     '0.3.0',
+351 silly addNameRange     '0.4.0',
+351 silly addNameRange     '0.4.1',
+351 silly addNameRange     '0.5.0',
+351 silly addNameRange     '0.6.0',
+351 silly addNameRange     '0.6.1',
+351 silly addNameRange     '0.6.2',
+351 silly addNameRange     '0.7.0',
+351 silly addNameRange     '0.8.0',
+351 silly addNameRange     '0.9.0' ] ]
+352 verbose addNamed [ 'async', '0.2.10' ]
+353 verbose addNamed [ '0.2.10', '0.2.10' ]
+354 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+355 verbose lock async@0.2.10 /Users/christopheresplin/.npm/098b530d-async-0-2-10.lock
+356 http 401 https://registry.npmjs.org/uglify-to-browserify
+357 silly registry.get cb [ 304, undefined ]
+358 verbose etag uglify-to-browserify from cache
+359 silly addNameRange number 2 { name: 'uglify-to-browserify',
+359 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+359 silly addNameRange   hasData: true }
+360 silly addNameRange versions [ 'uglify-to-browserify',
+360 silly addNameRange   [ '0.0.1', '1.0.0', '1.0.1', '1.0.2' ] ]
+361 verbose addNamed [ 'uglify-to-browserify', '1.0.2' ]
+362 verbose addNamed [ '1.0.2', '1.0.2' ]
+363 silly lockFile 1fc290f9-uglify-to-browserify-1-0-2 uglify-to-browserify@1.0.2
+364 verbose lock uglify-to-browserify@1.0.2 /Users/christopheresplin/.npm/1fc290f9-uglify-to-browserify-1-0-2.lock
+365 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+366 silly lockFile 098b530d-async-0-2-10 async@0.2.10
+367 silly lockFile e00b1d77-async-0-2-6 async@~0.2.6
+368 silly lockFile e00b1d77-async-0-2-6 async@~0.2.6
+369 silly lockFile 1fc290f9-uglify-to-browserify-1-0-2 uglify-to-browserify@1.0.2
+370 silly lockFile 1fc290f9-uglify-to-browserify-1-0-2 uglify-to-browserify@1.0.2
+371 silly lockFile 8d4498e3-uglify-to-browserify-1-0-0 uglify-to-browserify@~1.0.0
+372 silly lockFile 8d4498e3-uglify-to-browserify-1-0-0 uglify-to-browserify@~1.0.0
+373 http 401 https://registry.npmjs.org/optimist
+374 silly registry.get cb [ 304, undefined ]
+375 verbose etag optimist from cache
+376 silly addNameRange number 2 { name: 'optimist', range: '>=0.3.5-0 <0.4.0-0', hasData: true }
+377 silly addNameRange versions [ 'optimist',
+377 silly addNameRange   [ '0.0.1',
+377 silly addNameRange     '0.0.2',
+377 silly addNameRange     '0.0.4',
+377 silly addNameRange     '0.0.5',
+377 silly addNameRange     '0.0.6',
+377 silly addNameRange     '0.0.7',
+377 silly addNameRange     '0.1.0',
+377 silly addNameRange     '0.1.1',
+377 silly addNameRange     '0.1.2',
+377 silly addNameRange     '0.1.3',
+377 silly addNameRange     '0.1.4',
+377 silly addNameRange     '0.1.5',
+377 silly addNameRange     '0.1.6',
+377 silly addNameRange     '0.1.7',
+377 silly addNameRange     '0.1.8',
+377 silly addNameRange     '0.1.9',
+377 silly addNameRange     '0.0.3',
+377 silly addNameRange     '0.2.0',
+377 silly addNameRange     '0.2.1',
+377 silly addNameRange     '0.2.2',
+377 silly addNameRange     '0.2.3',
+377 silly addNameRange     '0.2.4',
+377 silly addNameRange     '0.2.5',
+377 silly addNameRange     '0.2.6',
+377 silly addNameRange     '0.2.7',
+377 silly addNameRange     '0.2.8',
+377 silly addNameRange     '0.3.0',
+377 silly addNameRange     '0.3.1',
+377 silly addNameRange     '0.3.3',
+377 silly addNameRange     '0.3.4',
+377 silly addNameRange     '0.3.5',
+377 silly addNameRange     '0.3.6',
+377 silly addNameRange     '0.3.7',
+377 silly addNameRange     '0.4.0',
+377 silly addNameRange     '0.5.0',
+377 silly addNameRange     '0.5.1',
+377 silly addNameRange     '0.5.2',
+377 silly addNameRange     '0.6.0',
+377 silly addNameRange     '0.6.1' ] ]
+378 verbose addNamed [ 'optimist', '0.3.7' ]
+379 verbose addNamed [ '0.3.7', '0.3.7' ]
+380 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+381 verbose lock optimist@0.3.7 /Users/christopheresplin/.npm/090e1d8d-optimist-0-3-7.lock
+382 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+383 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+384 silly lockFile a1f99b53-optimist-0-3-5 optimist@~0.3.5
+385 silly lockFile a1f99b53-optimist-0-3-5 optimist@~0.3.5
+386 http 401 https://registry.npmjs.org/source-map/0.1.34
+387 silly registry.get cb [ 401,
+387 silly registry.get   { date: 'Thu, 14 Aug 2014 18:23:01 GMT',
+387 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+387 silly registry.get     'content-type': 'application/json',
+387 silly registry.get     'cache-control': 'max-age=60',
+387 silly registry.get     'content-length': '67',
+387 silly registry.get     'accept-ranges': 'bytes',
+387 silly registry.get     via: '1.1 varnish',
+387 silly registry.get     'x-served-by': 'cache-ord1724-ORD',
+387 silly registry.get     'x-cache': 'MISS',
+387 silly registry.get     'x-cache-hits': '0',
+387 silly registry.get     'x-timer': 'S1408040581.256206,VS0,VE257',
+387 silly registry.get     'keep-alive': 'timeout=10, max=50',
+387 silly registry.get     connection: 'Keep-Alive' } ]
+388 silly lockFile 39026ad4-source-map-0-1-34 source-map@0.1.34
+389 silly lockFile 39026ad4-source-map-0-1-34 source-map@0.1.34
+390 verbose about to build /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/uglify-js
+391 info /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/uglify-js unbuild
+392 info preuninstall uglify-js@2.4.15
+393 info uninstall uglify-js@2.4.15
+394 verbose false,/Users/christopheresplin/Development/rtfm/node_modules,/Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules unbuild uglify-js@2.4.15
+395 verbose /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify/node_modules/.bin,[object Object] binRoot
+396 info postuninstall uglify-js@2.4.15
+397 verbose about to build /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify
+398 info /Users/christopheresplin/Development/rtfm/node_modules/grunt-contrib-uglify unbuild
+399 info preuninstall grunt-contrib-uglify@0.2.7
+400 info uninstall grunt-contrib-uglify@0.2.7
+401 verbose true,/Users/christopheresplin/Development/rtfm/node_modules,/Users/christopheresplin/Development/rtfm/node_modules unbuild grunt-contrib-uglify@0.2.7
+402 info postuninstall grunt-contrib-uglify@0.2.7
+403 error Error: unauthorized Name or password is incorrect.: source-map/0.1.34
+403 error     at RegClient.<anonymous> (/usr/local/Cellar/node/0.10.22/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:272:14)
+403 error     at Request.self.callback (/usr/local/Cellar/node/0.10.22/lib/node_modules/npm/node_modules/request/request.js:129:22)
+403 error     at Request.EventEmitter.emit (events.js:98:17)
+403 error     at Request.<anonymous> (/usr/local/Cellar/node/0.10.22/lib/node_modules/npm/node_modules/request/request.js:873:14)
+403 error     at Request.EventEmitter.emit (events.js:117:20)
+403 error     at IncomingMessage.<anonymous> (/usr/local/Cellar/node/0.10.22/lib/node_modules/npm/node_modules/request/request.js:824:12)
+403 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+403 error     at _stream_readable.js:920:16
+403 error     at process._tickCallback (node.js:415:13)
+404 error If you need help, you may report this log at:
+404 error     <http://github.com/isaacs/npm/issues>
+404 error or email it to:
+404 error     <npm-@googlegroups.com>
+405 error System Darwin 13.3.0
+406 error command "/usr/local/Cellar/node/0.10.22/bin/node" "/usr/local/bin/npm" "install"
+407 error cwd /Users/christopheresplin/Development/rtfm
+408 error node -v v0.10.22
+409 error npm -v 1.3.14
+410 verbose exit [ 1, true ]
