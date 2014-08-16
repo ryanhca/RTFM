@@ -22,9 +22,24 @@ angular.module('rtfmApp', ['firebase', 'ui.router']).config(function ($stateProv
     .state('secure.threads', {
       url: '/threads',
       templateUrl: 'views/threads.html',
-      controller: 'ThreadsCtrl'
+      controller: 'ThreadsCtrl',
+      resolve: {
+        threadsRef: function (ThreadService) {
+          return ThreadService.getThreads();
+        }
+      }
     })
     .state('secure.thread', {
-      url: '/thread/$threadId'
+      url: '/thread/:threadId',
+      templateUrl: 'views/thread.html',
+      controller: 'ThreadCtrl',
+      resolve: {
+        threadRef: function (ThreadService, $stateParams) {
+          return ThreadService.getThread($stateParams.threadId);
+        },
+        commentsRef: function (ThreadService, $stateParams) {
+          return ThreadService.getComments($stateParams.threadId);
+        }
+      }
     });
 });
