@@ -587,3 +587,280 @@ Check out this [example user-service](https://gist.github.com/deltaepsilon/3b1b5
 got some more advanced code that may look confusing at first, but read through each function and try to understand what
 it's doing. If you can't understand the function, skip it and circle back later. The important functions in this example
 are the simple ones.
+
+## Black Diamond Instructions
+
+A few folks have been curious as to how they could fulfill the Black Diamond requirement. I'll go ahead and give
+instructions below, and I've built out the ```black-diamond``` branch of the repo to show the Black Diamond code in
+action.
+
+Do not get frustrated by the complexity of these following steps. I've arrived at this method of Firebase authentication
+over the course of multiple projects. It took me a couple of hours to complete the Black Diamond code and write these
+instructions, and I know this process by heart. I would expect a less experience developer to take a day or two to
+figure this out. It took me longer than that the first time that I did it.
+
+The purpose of this walkthrough is to get your code working first and explain why it works second. I've included huge
+code snippets to help you along, because some of this is just brutally difficult on your first time through, and I want
+to keep your frustration levels manageable.
+
+It gets easier. It gets much, much easier.
+
+But everyone makes mistakes, nobody's code works the first time, and you'll never succeed if you don't have the patience
+to debug your own code. Read the debug messages carefully. Remember that anything that you do in a ```resolve```
+function will fail silently, so if you're not seeing an error, walk through your resolves very carefully in DevTools.
+
+### Step 7: Create User Service
+
+1. Use Yeoman to create a ```user-service```. Inject ```$q```, ```$firebase```, ```$firebaseSimpleLogin``` and
+```EnvironmentService```.
+2. Create a ```firebaseSimpleLogin``` object using the following:
+
+```
+var firebaseUrl = EnvironmentService.getEnv().firebase,
+      firebase = new Firebase(firebaseUrl),
+      firebaseSimpleLogin = $firebaseSimpleLogin(firebase);
+```
+
+All we're doing here is creating a raw Firebase ref to our Firebase endpoint, then passing that ref into
+```$firebaseSimpleLogin``` to create a ```firebaseSimpleLogin``` object that knows about our Firebase endpoint.
+
+3. Create functions named ```getCurrentUser```, ```register```, ```logIn```, ```logOut``` and ```getUser```.
+These function will mostly rely on the ```firebaseSimpleLogin``` object, for which you should
+[read the docs](https://www.firebase.com/docs/web/libraries/angular/api.html#angularfire-firebasesimplelogin).
+
+The ```register``` function should accept a ```username``` as well as an ```email``` and a ```password```. The username
+will be used for identifying the user in threads and comments.
+
+After you've completed your user registration in the ```register``` function, use the returned promise to retrieve
+the new ```currentUser``` object and create your own ```userObject``` using a Firebase object. This will enable you
+to track extra user details in your Firebase data store. Make sure to save the user's email address and username to
+this new ```userObject```.
+
+Set up the ```logOut``` function to return a resolved promise. This isn't strictly necessary, but if ```logOut``` did
+not return a promise, it would be the only function in ```UserService``` that didn't, and that just feels wrong.
+
+The end result should look something like this:
+
+```
+'use strict';
+
+angular.module('rtfmApp')
+  .service('UserService', function UserService($q, $firebase, $firebaseSimpleLogin, EnvironmentService) {
+    var firebaseUrl = EnvironmentService.getEnv().firebase,
+      firebase = new Firebase(firebaseUrl),
+      firebaseSimpleLogin = $firebaseSimpleLogin(firebase);
+
+    return {
+      getCurrentUser: function () {
+        return firebaseSimpleLogin.$getCurrentUser();
+      },
+
+      register: function (username, email, password) {
+        var firebasePromise = firebaseSimpleLogin.$createUser(email, password),
+          userDeferred = $q.defer(),
+          combinedPromise = $q.all(firebasePromise, userDeferred.promise);
+
+        // After the Firebase user has been created, create our own user object
+        firebasePromise.then(function (currentUser) {
+          var userObject = $firebase(new Firebase(firebaseUrl + '/users/' + currentUser.id)).$asObject();
+
+          userObject.username = username;
+          userObject.email = currentUser.email;
+          userObject.$save().then(userDeferred.resolve, userDeferred.reject);
+        });
+
+        return combinedPromise;
+      },
+
+      logIn: function (email, password) {
+        return firebaseSimpleLogin.$login('password', {
+          email: email,
+          password: password,
+          rememberMe: true // Override default session length (browser session) to be 30 days
+        });
+      },
+
+      logOut: function () {
+        var deferred = $q.defer();
+
+        deferred.resolve(firebaseSimpleLogin.$logout());
+
+        return deferred.promise;
+      },
+
+      getUser: function () {
+        var deferred = $q.defer();
+
+        firebaseSimpleLogin.$getCurrentUser().then(function (currentUser) {
+          if (currentUser && currentUser.id) {
+            var userRef = $firebase(new Firebase(firebaseUrl + '/users/' + currentUser.id));
+            deferred.resolve(userRef.$asObject());
+          } else {
+            deferred.reject();
+          }
+
+        });
+
+        return deferred.promise;
+      }
+
+
+    }
+  });
+
+```
+
+### Step 8: Set Firebase Rules
+
+Let's not forget to set up our Firebase security rules. They're simple enough.
+
+```
+{
+    "rules": {
+      "threads": {
+        ".read": true,
+        ".write": true
+      },
+      "users": {
+        "$user": {
+          ".read": "$user == auth.id",
+          ".write": "$user == auth.id"
+        }
+      }
+
+    }
+}
+```
+
+This rules set assumes that you are working at the base of your Firebase... meaning that you're not nesting this
+data under anything. In my case, that means that my Firebase endpoint is ```https://rtfm-demo.firebaseio.com```,
+not ```https://rtfm-demo.firebaseio.com/chris``` or anything else that would result in nested data.
+
+The first rule is a tad permissive, and you'd want to rethink it for production, but it states that anyone can read
+or write to ```/threads```. The second rule enables authenticated users to read and write to the user object whose key
+matches their authentication id. For instance, if at registration ```firebaseSimpleLogin``` returns a ```currentUser```
+with an ```id``` equal to 6, then I'll save that user's selected username at ```/users/6```. This rule states that only
+a ```currentUser``` with ```id``` equal to 6 can access ```/users/6```.
+
+### Step 9: Build Out the Login View
+
+1. Change your ```logIn``` function in ```login.js``` to accept and email and a password, then call out to
+```UserService``` for a user object.
+2. Create a ```register``` function in ```login.js```. It should accept a ```username```, ```email``` and a
+```password```. It then uses ```UserService``` to register the user and log the user in once registration is complete.
+3. Expand ```login.html``` to take advantage of these new functions.
+
+```
+// login.html
+
+<div>
+    <h3>Login</h3>
+
+    <form name="loginForm">
+        <input type="email" ng-model="login.email" placeholder="Email..." required/>
+        <input type="password" ng-model="login.password" placeholder="Password..." required=""/>
+        <button ng-click="logMeIn(login.email, login.password)" ng-disabled="loginForm.$invalid">Log In</button>
+    </form>
+
+
+    <hr>
+
+    <h3>Register</h3>
+
+    <form name="registerForm">
+        <input type="text" ng-model="registration.username" placeholder="Username..." required/>
+        <input type="email" ng-model="registration.email" placeholder="Email..." required/>
+        <input type="password" ng-model="registration.password" placeholder="Password..." required/>
+        <button ng-click="register(registration.username, registration.email, registration.password)">Register</button>
+    </form>
+</div>
+
+```
+
+```
+// login.js
+
+'use strict';
+
+angular.module('rtfmApp')
+  .controller('LoginCtrl', function ($scope, UserService, $state) {
+    $scope.logMeIn = function (email, password) {
+      UserService.logIn(email, password).then(function (user) {
+        $state.go('secure.threads');
+      }, function (error) {
+        alert(error);
+      });
+
+    };
+
+    $scope.register = function (username, email, password) {
+      UserService.register(username, email, password).then(function (user) {
+        UserService.logIn(email, password).then(function () {
+          $state.go('secure.threads');
+        });
+
+      }, function (error) {
+        alert(error);
+      });
+    };
+
+  });
+
+```
+
+### Step 10: Update the Secure Abstract View
+
+1. Update ```app.js``` so that the ```secure``` state resolves ```currentUser``` and ```user```.
+2. Update the ```secure``` state to include a ***log out*** link in its template. It doesn't have to be fancy. It just
+has to call ```logOut()```.
+3. Edit ```secure.js``` to inject ```currentUser``` and ```user``` and bind them to ```$scope```.
+4. Create a ```logOut``` function in ```secure.js``` that uses ```UserService``` to log out the user and forward her
+back to the ```login``` state. Don't forget to call ```$destroy``` on the ```user``` object to avoid a nasty
+console error when the now-invalid ```user``` object attempts to update its data.
+
+```
+// app.js fragment
+
+.state('secure', {
+  abstract: true,
+  template: '<a ng-click="logOut()">Log Out</a><div ui-view>',
+  controller: 'SecureCtrl',
+  resolve: {
+    currentUser: function (UserService) {
+      return UserService.getCurrentUser();
+    },
+    user: function (UserService) {
+      return UserService.getUser();
+    }
+  }
+})
+```
+
+```
+// secure.js
+
+'use strict';
+
+angular.module('rtfmApp')
+  .controller('SecureCtrl', function ($scope, $state, currentUser, user, UserService) {
+    if (!currentUser) {
+      $state.go('login');
+    }
+
+    $scope.currentUser = currentUser;
+
+    $scope.user = user;
+
+    $scope.logOut = function () {
+      delete $scope.currentUser;
+
+      $scope.user.$destroy(); // Stop listening... failure to stop listening results in errors.
+
+      UserService.logOut().then(function () {
+        $state.go('login');
+      });
+    }
+
+  });
+
+```
