@@ -11,11 +11,14 @@ angular.module('rtfmApp', ['firebase', 'ui.router']).config(function ($stateProv
     })
     .state('secure', {
       abstract: true,
-      template: '<div ui-view>',
+      template: '<a ng-click="logOut()">Log Out</a><div ui-view>',
       controller: 'SecureCtrl',
       resolve: {
-        username: function (EnvironmentService) {
-          return EnvironmentService.getUsername();
+        currentUser: function (UserService) {
+          return UserService.getCurrentUser();
+        },
+        user: function (UserService) {
+          return UserService.getUser();
         }
       }
     })

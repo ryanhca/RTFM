@@ -3,7 +3,7 @@
 
     <form name="newThreadForm">
         <input type="text" ng-model="newThreadTitle" placeholder="New thread title..." required/>
-        <button ng-disabled="newThreadForm.$invalid" ng-click="createThread(username, newThreadTitle)">Add Thread</button>
+        <button ng-disabled="newThreadForm.$invalid" ng-click="createThread(user.username, newThreadTitle)">Add Thread</button>
     </form>
 
     <ul>

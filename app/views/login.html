@@ -1,6 +1,21 @@
-<p>This is the login view.</p>
-
 <div>
-    <input type="text" ng-model="username"/>
-    <button ng-click="logMeIn(username)">Log In</button>
+    <h3>Login</h3>
+
+    <form name="loginForm">
+        <input type="email" ng-model="login.email" placeholder="Email..." required/>
+        <input type="password" ng-model="login.password" placeholder="Password..." required=""/>
+        <button ng-click="logMeIn(login.email, login.password)" ng-disabled="loginForm.$invalid">Log In</button>
+    </form>
+
+
+    <hr>
+
+    <h3>Register</h3>
+
+    <form name="registerForm">
+        <input type="text" ng-model="registration.username" placeholder="Username..." required/>
+        <input type="email" ng-model="registration.email" placeholder="Email..." required/>
+        <input type="password" ng-model="registration.password" placeholder="Password..." required/>
+        <button ng-click="register(registration.username, registration.email, registration.password)">Register</button>
+    </form>
 </div>

@@ -3,7 +3,7 @@
 
     <form name="newCommentForm">
         <input type="text" ng-model="newCommentText" placeholder="Write a comment..." required/>
-        <button ng-disabled="newCommentForm.$invalid" ng-click="createComment(username, newCommentText)">Add Comment</button>
+        <button ng-disabled="newCommentForm.$invalid" ng-click="createComment(user.username, newCommentText)">Add Comment</button>
     </form>
 
     <ul>
