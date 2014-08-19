@@ -611,8 +611,7 @@ function will fail silently, so if you're not seeing an error, walk through your
 
 ### Step 7: Create User Service
 
-1. Use Yeoman to create a ```user-service```. Inject ```$q```, ```$firebase```, ```$firebaseSimpleLogin``` and
-```EnvironmentService```.
+1. Use Yeoman to create a ```user-service```. Inject ```$q```, ```$firebase```, ```$firebaseSimpleLogin``` and ```EnvironmentService```.
 2. Create a ```firebaseSimpleLogin``` object using the following:
 
 ```
